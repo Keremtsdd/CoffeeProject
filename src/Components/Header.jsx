@@ -13,11 +13,11 @@ function Header() {
 
             <div className="flex justify-center mt-10 select-none inline-block">
 
-                <h1 className='font-bold cursor-pointer text-4xl pr-6'>LOGO</h1>
+                <h1 onClick={() => navigate('/')} className='font-bold cursor-pointer text-4xl pr-6'>LOGO</h1>
                 <div className='h-10 w-0.5 bg-white'></div>
                 <div className='flex justify-center pr-20 cursor-pointer font-serif text-xl pl-6 mt-1.5 space-x-6'>
                     <h1 onClick={() => navigate('/')} className=" hover:text-orange-600 duration-300">Anasayfa</h1>
-                    <h1 className=" hover:text-orange-600 duration-300">Biz Kimiz?</h1>
+                    <h1 onClick={() => navigate('/about')} className=" hover:text-orange-600 duration-300">Biz Kimiz?</h1>
                     <h1 className=" hover:text-orange-600 duration-300">Menü</h1>
                     <h1 className=" hover:text-orange-600 duration-300 pr-1">Blog</h1>
                 </div>
