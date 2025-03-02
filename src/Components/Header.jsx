@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 function Header() {
     const navigate = useNavigate()
-    const [isOpen, isSetOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
     const handleOptionClick = () => {
-        isSetOpen(false);
+        setIsOpen(false);
     };
     return (
         <>
@@ -35,12 +35,12 @@ function Header() {
 
                 </div>
 
-                <div className='relative' onMouseEnter={() => isSetOpen(true)} onMouseLeave={() => isSetOpen(false)}>
+                <div className='relative' onMouseMove={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
 
                     <h1 className="relative hover:text-orange-600 duration-300 cursor-pointer font-serif text-xl pl-6 mt-1.5 -ml-20 group inline-block ">
                         <span className="relative flex items-center">
                             Bize Ulaşın
-                            <ExpandMoreIcon fontSize="small" className="mb-0.5 ml-1" />
+                            <ExpandMoreIcon fontSize="small" className="mb-0.5" />
                         </span>
                         <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-orange-600 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
                     </h1>
@@ -56,7 +56,7 @@ function Header() {
                                         className="px-4 py-2 hover:text-orange-600 duration-300 cursor-pointer relative group"
                                     >
                                         {item}
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </li>
                                 ))}
                             </ul>
