@@ -8,6 +8,7 @@ function Home() {
                 <Header />
             </header>
 
+
             <div className='w-full bg-neutral-200'>
 
                 <img className='w-full' src="https://shop.fomilk.com/cdn/shop/articles/Adsiz_tasarim_-_2023-02-24T125140.409_1100x.jpg?v=1677233543g" alt="HomeBground" />

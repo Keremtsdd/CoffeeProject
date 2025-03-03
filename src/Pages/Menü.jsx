@@ -3,19 +3,20 @@ import Header from '../Components/Header'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useNavigate } from 'react-router-dom';
 
-function About() {
+function Menü() {
     const navigate = useNavigate()
     return (
+
         <>
             <header className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 '>
                 <Header />
             </header>
 
             <div>
-                <img className='h-[500px] w-full select-none' src="https://wallpapers.com/images/hd/plain-black-desktop-lkf8asac31jppw0w.jpg" alt="aboutbanner" />
+                <img className='h-[500px] w-full select-none' src="https://wallpapers.com/images/hd/plain-black-desktop-lkf8asac31jppw0w.jpg" alt="Menüİmage" />
 
                 <div className='absolute top-0 left-0 flex flex-col mt-72 ml-72 text-white'>
-                    <h1 className='text-3xl font-bold'>Biz Kimiz?</h1>
+                    <h1 className='text-3xl font-bold'>Menü</h1>
 
                     <div className='flex items-center space-x-3 mt-5'>
                         <span className='h-1 w-10  bg-white'></span>
@@ -27,7 +28,7 @@ function About() {
                                 Anasayfa
                             </h2>
                             <ArrowRightAltIcon fontSize='small' className='mt-0.5' />
-                            <h2 className='text-md'>Biz Kimiz?</h2>
+                            <h2 className='text-md'>Menü</h2>
                         </div>
                     </div>
                 </div>
@@ -37,4 +38,4 @@ function About() {
     )
 }
 
-export default About
+export default Menü
