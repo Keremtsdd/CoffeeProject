@@ -42,7 +42,7 @@ function Header() {
                             Bize Ulaşın
                             <ExpandMoreIcon fontSize="small" className="mb-0.5" />
                         </span>
-                        <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-orange-600 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+                        <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-orange-600 transition-all duration-300 ease-out group-hover:w-full group-hover:left-3"></span>
                     </h1>
 
 
