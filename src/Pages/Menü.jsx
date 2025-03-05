@@ -1,21 +1,13 @@
 import React from 'react'
-import Header from '../Components/Header'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useNavigate } from 'react-router-dom';
-import Language from '../Components/Language'
+
 
 function Menü() {
     const navigate = useNavigate()
     return (
 
         <>
-            <header className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 '>
-                <Header />
-            </header>
-            <div className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 flex justify-end'>
-                <Language />
-            </div>
-
             <div>
                 <img className='h-[500px] w-full select-none' src="https://wallpapers.com/images/hd/plain-black-desktop-lkf8asac31jppw0w.jpg" alt="Menüİmage" />
 

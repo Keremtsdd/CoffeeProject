@@ -1,19 +1,8 @@
 import React from 'react'
-import Header from '../Components/Header'
-import Language from '../Components/Language'
-
 
 function Home() {
     return (
         <>
-            <header className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 '>
-                <Header />
-            </header>
-
-            <div className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 flex justify-end'>
-                <Language />
-            </div>
-
 
             <div className='w-full bg-neutral-200'>
 
@@ -22,7 +11,6 @@ function Home() {
                 <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white text-3xl">
 
                 </div>
-
 
                 <div className='flex justify-center items-center absolute top-full left-0 w-full z-20'>
                     <div className='flex justify-center items-center space-x-8 h-96 w-1/2 bg-white rounded-sm  shadow-xl transition-transform hover:scale-105'>
