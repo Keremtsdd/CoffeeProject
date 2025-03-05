@@ -27,7 +27,7 @@ function ScrollToTop() {
         isVisibility && (
             <motion.button
                 onClick={scrollToTop}
-                className="h-12 w-12 fixed bottom-10 right-10 border-2 border-black  shadow-lg hover:bg-black hover:text-white duration-500 rounded-full transition-all"
+                className="h-12 w-12 fixed bottom-7 right-7 border-2 border-black  shadow-lg hover:bg-black hover:text-white duration-500 rounded-full transition-all"
                 initial={{ opacity: 0, scale: 1 }}
                 animate={{ opacity: isVisibility ? 1 : 0, scale: isVisibility ? 1 : 0.5 }}
                 transition={{ duration: 1.2 }}

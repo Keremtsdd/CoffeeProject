@@ -13,7 +13,7 @@ function Header() {
     };
 
     return (
-        <div className="flex justify-center mt-10 select-none inline-block">
+        <div className="flex justify-center mt-10 select-none">
 
             <h1 onClick={() => navigate('/')} className='font-bold cursor-pointer text-4xl pr-6'>
                 LOGO
