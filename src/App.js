@@ -7,6 +7,7 @@ import Menü from "./Pages/Menü";
 import ScrollToTop from "./Components/ScrollToTop";
 import Language from "./Components/Language";
 import "./i18n";
+import Location from "./Pages/Location";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menü" element={<Menü />} />
+          <Route path="/location" element={<Location />} />
         </Routes>
       </div>
     </BrowserRouter>

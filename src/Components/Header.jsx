@@ -52,7 +52,7 @@ function Header() {
                 {isOpen && (
                     <div className="absolute left-0 mt-2 w-40 bg-slate-800 text-white border-gray-300 rounded-sm shadow-lg">
                         <ul className="py-2">
-                            {["Contact", "AAAAA", "BBBBBB", "CCCCCC"].map((item, index) => (
+                            {["Contact", "Ziyaret et", "BBBBBB", "CCCCCC"].map((item, index) => (
                                 <li
                                     key={index}
                                     onClick={handleOptionClick}
