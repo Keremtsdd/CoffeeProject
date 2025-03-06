@@ -1,4 +1,6 @@
 import React from 'react'
+import ReviewSection from "../Pages/ReviewSection";
+
 
 function Home() {
     return (
@@ -59,6 +61,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+                <ReviewSection />
 
                 <div className='h-72 w-full bg-slate-700 mt-52' ></div>
             </div>

@@ -53,7 +53,7 @@ function Location() {
                     </div>
 
                     <div>
-                        <h1 className='mb-5 ml-20 mt-14 text-3xl font-bold'>Çalışma Saatleri;</h1>
+                        <h1 className='mb-5 ml-20 mt-14 text-2xl font-bold'>Çalışma Saatleri;</h1>
                         <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta İçi: 08:00-19:00</h1>
                         <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta Sonu: 08:00-19:00</h1>
                     </div>

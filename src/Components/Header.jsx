@@ -2,15 +2,12 @@ import React, { useState } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 function Header() {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
-
-    const handleOptionClick = () => {
-        setIsOpen(false);
-    };
 
     return (
         <div className="flex justify-center mt-10 select-none">
@@ -52,13 +49,16 @@ function Header() {
                 {isOpen && (
                     <div className="absolute left-0 mt-2 w-40 bg-slate-800 text-white border-gray-300 rounded-sm shadow-lg">
                         <ul className="py-2">
-                            {["Contact", "Ziyaret et", "BBBBBB", "CCCCCC"].map((item, index) => (
-                                <li
-                                    key={index}
-                                    onClick={handleOptionClick}
-                                    className="px-4 py-2 hover:text-orange-600 duration-300 cursor-pointer relative group"
-                                >
-                                    {item}
+                            {[
+                                { name: "İletişim", path: "/contact" },
+                                { name: "Bizi Ziyaret Edin", path: "/location" },
+                                { name: "BBBBBB", path: "/bbbbbb" },
+                                { name: "CCCCCC", path: "/cccccc" },
+                            ].map((item, index) => (
+                                <li key={index} className="px-4 py-2 hover:text-orange-600 duration-300 cursor-pointer relative group">
+                                    <Link to={item.path} className="block w-full h-full">
+                                        {item.name}
+                                    </Link>
                                     <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </li>
                             ))}
