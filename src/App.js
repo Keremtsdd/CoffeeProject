@@ -8,23 +8,20 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Language from "./Components/Language";
 import "./i18n";
 import Location from "./Pages/Location";
+import PagesScrollTop from "./Components/PagesScrollTop";
 
 function App() {
-
-
   return (
     <BrowserRouter>
+      <PagesScrollTop />
       <ScrollToTop />
       <div className="h-[200vh]">
         <header className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 '>
-
           <Header />
         </header>
-
         <div className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 flex justify-end'>
           <Language />
         </div>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -1,5 +1,10 @@
 import React from 'react'
 import ReviewSection from "../Pages/ReviewSection";
+import Map from '../Components/Map';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 
 function Home() {
@@ -8,23 +13,37 @@ function Home() {
 
             <div className='w-full bg-neutral-200'>
 
-                <img className='w-full' src="https://shop.fomilk.com/cdn/shop/articles/Adsiz_tasarim_-_2023-02-24T125140.409_1100x.jpg?v=1677233543g" alt="HomeBground" />
-
+                <video
+                    className="w-full"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                >
+                    <source
+                        src="https://cdn.create.vista.com/api/media/medium/710613894/stock-video-footage-machine-cooling-roasted-beans.mp4"
+                        type="video/mp4"
+                    />
+                </video>
                 <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white text-3xl">
 
                 </div>
 
-                <div className='flex justify-center items-center absolute top-full left-0 w-full z-20'>
-                    <div className='flex justify-center items-center space-x-8 h-96 w-1/2 bg-white rounded-sm  shadow-xl transition-transform hover:scale-105'>
-                        <img className='h-96 w-3/6 object-cover rounded-sm'
+                <div className="flex justify-center items-center absolute top-full left-0 w-full z-30">
+                    <div className="flex justify-center items-center space-x-8 h-96 w-1/2 bg-white rounded-sm shadow-xl transition-transform hover:scale-105">
+                        <img
+                            className="h-full w-3/6 object-cover rounded-sm"
                             src="https://images.stockcake.com/public/e/0/7/e077b8de-e7d7-427b-9dcd-7b57a766d759_large/steaming-morning-coffee-stockcake.jpg"
-                            alt="sds" />
-                        <div className='text-center'>
-                            <h2 className='text-2xl font-bold'>Görselin Yanındaki Metin</h2>
+                            alt="sds"
+                        />
+                        <div className="text-center pl-6">
+                            <h2 className="text-2xl font-bold">Görselin Yanındaki Metin</h2>
                             <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
                         </div>
                     </div>
                 </div>
+
+
 
                 <div className='flex justify-center items-center mt-14'>
 
@@ -63,6 +82,38 @@ function Home() {
                 </div>
 
                 <ReviewSection />
+
+                <div className="h-[550px] flex justify-between space-x-12 mt-32 px-16 bg-slate-800">
+
+                    <div className="h-[100px] w-[800px] ml-52 mt-20" >
+                        <Map />
+                    </div>
+
+                    <div className="space-y-6 w-3/5 mt-28 text-white">
+
+                        <div className='flex space-x-2 ml-20'>
+                            <LocationOnIcon fontSize='large' />
+                            <h1>Konum: Dükkan Adresiniz</h1>
+                        </div>
+                        <div className='flex space-x-2 ml-20'>
+                            <PhoneIcon fontSize='large' />
+                            <h1>Telefon: 0123456789</h1>
+                        </div>
+                        <div className='flex space-x-2 ml-20'>
+                            <EmailIcon fontSize='large' />
+                            <h1>E-posta: info@kahvedukkani.com</h1>
+                        </div>
+
+                        <div className='text-white'>
+                            <h1 className='mb-5 ml-20 mt-14 text-2xl font-bold'>Çalışma Saatleri;</h1>
+                            <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta İçi: 08:00-19:00</h1>
+                            <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta Sonu: 08:00-19:00</h1>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
                 <div className='h-72 w-full bg-slate-700 mt-52' ></div>
             </div>
