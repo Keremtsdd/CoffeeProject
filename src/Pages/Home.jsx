@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import ReviewSection from "../Pages/ReviewSection";
 import Map from '../Components/Map';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -25,9 +26,18 @@ function Home() {
                         type="video/mp4"
                     />
                 </video>
-                <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center text-white text-3xl">
+                <div className="absolute top-0 left-0 w-full h-[1000px] flex justify-center items-center text-white">
+
+                    <div className=''>
+                        <h1 className='text-8xl font-bold ml-20'>BURASI SLOGAN YERİ</h1>
+                        <h1 className='text-8xl font-bold'>BURASI ALT SLOGAN YERİ</h1>
+                        <h1 className='flex justify-center mt-7'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus porro ab sed veniam impedit iusto, natus aspernatur, </h1>
+                        <h1 className='flex justify-center'>earum laudantium reprehenderit facilis commodi blanditiis fugit? Adipisci mollitia voluptatibus nobis, repudiandae, consectetur </h1>
+                        <h1 className='flex justify-center mt-20 font-bold text-5xl'>LOGO</h1>
+                    </div>
 
                 </div>
+
 
                 <div className="flex justify-center items-center absolute top-full left-0 w-full z-30">
                     <div className="flex justify-center items-center space-x-8 h-96 w-1/2 bg-white rounded-sm shadow-xl transition-transform hover:scale-105">
@@ -42,8 +52,6 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
-
 
                 <div className='flex justify-center items-center mt-14'>
 

@@ -82,7 +82,7 @@ function Header() {
                         </h1>
 
                         {isOpen && (
-                            <div className="absolute left-0 mt-2 w-40 bg-slate-800 text-white border-gray-300 rounded-sm shadow-lg">
+                            <div className="absolute left-0 w-40 bg-slate-800 text-white border-gray-300 rounded-sm shadow-lg mt-1">
                                 <ul className="py-2">
                                     {[
                                         { name: "İletişim", path: "/contact" },
