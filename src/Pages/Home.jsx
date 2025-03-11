@@ -53,41 +53,60 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='flex justify-center items-center mt-14'>
+                <motion.div
 
-                    <div className='flex justify-center items-center space-x-8 h-96 w-1/2 mt-72 bg-white shadow-xl rounded-sm transition-transform hover:scale-105'>
+                    className="transition-colors hover:scale-105"
+                    initial={{ opacity: 0, y: 200 }}
+                    whileInView={{ opacity: 4, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
 
-                        <div className='text-center'>
+                    <div className='flex justify-center items-center mt-14'>
 
-                            <h2 className='text-2xl font-bold'>Görselin Yanındaki Metin</h2>
+                        <div className='flex justify-center items-center space-x-8 h-96 w-1/2 mt-72 bg-white shadow-xl rounded-sm transition-transform hover:scale-105'>
 
-                            <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
+                            <div className='text-center'>
 
-                        </div>
+                                <h2 className='text-2xl font-bold'>Görselin Yanındaki Metin</h2>
 
-                        <img className='h-96 w-3/6 object-cover rounded-sm'
-                            src="https://ideacdn.net/idea/cx/20/myassets/products/780/2.jpg?revision=1697143329"
-                            alt="sds" />
+                                <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
 
-                    </div>
-                </div>
+                            </div>
 
-                <div className='flex justify-center items-center mt-14 '>
-
-                    <div className='flex justify-center items-center space-x-8 w-1/2 mt-4 bg-white shadow-xl rounded-sm transition-transform hover:scale-105'>
-
-                        <img className='h-96 w-3/6 object-cover rounded-sm'
-                            src="https://www.nescafe.com/tr/sites/default/files/2024-09/Nes_ConEco3.0_B2_Article24-YourCompleteCoffeeCupGuide_Image%204-1066%20%C3%97%20970_0.jpg"
-                            alt="sds" />
-
-                        <div className='text-center'>
-
-                            <h2 className='text-2xl font-bold'>Görselin Yanındaki Metin</h2>
-                            <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
+                            <img className='h-96 w-3/6 object-cover rounded-sm'
+                                src="https://ideacdn.net/idea/cx/20/myassets/products/780/2.jpg?revision=1697143329"
+                                alt="sds" />
 
                         </div>
                     </div>
-                </div>
+
+                </motion.div>
+
+                <motion.div
+                    className="transition-colors hover:scale-105"
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 4, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <div className='flex justify-center items-center mt-14 '>
+
+                        <div className='flex justify-center items-center space-x-8 w-1/2 mt-4 bg-white shadow-xl rounded-sm transition-transform hover:scale-105'>
+
+                            <img className='h-96 w-3/6 object-cover rounded-sm'
+                                src="https://www.nescafe.com/tr/sites/default/files/2024-09/Nes_ConEco3.0_B2_Article24-YourCompleteCoffeeCupGuide_Image%204-1066%20%C3%97%20970_0.jpg"
+                                alt="sds" />
+
+                            <div className='text-center'>
+
+                                <h2 className='text-2xl font-bold'>Görselin Yanındaki Metin</h2>
+                                <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
 
                 <ReviewSection />
 
