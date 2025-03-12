@@ -77,7 +77,6 @@ function Home() {
                             <img className='h-96 w-3/6 object-cover rounded-sm'
                                 src="https://ideacdn.net/idea/cx/20/myassets/products/780/2.jpg?revision=1697143329"
                                 alt="sds" />
-
                         </div>
                     </div>
 

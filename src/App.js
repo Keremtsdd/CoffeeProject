@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from './Components/Header'
+import Header from './Components/Header';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Menü from "./Pages/Menü";
@@ -18,21 +18,28 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
-    }, 3000); // 3 saniye sonra sayfa tamamen yüklenir
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (!isLoaded) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isLoaded]);
 
   return (
     <BrowserRouter>
       <PagesScrollTop />
       <ScrollToTop />
       {!isLoaded && <LoadingScreen />}
-      <div className="h-[200vh]">
-        <header className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 '>
+      <div className={`h-[200vh] ${isLoaded ? "opacity-100" : "opacity-0"} transition-opacity duration-500`}>
+        <header className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-40 '>
           <Header />
         </header>
-        <div className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-10 flex justify-end'>
+        <div className='absolute -top-4 left-0 w-full bg-black bg-opacity-0 text-white p-4 z-50 flex justify-end'>
           <Language />
         </div>
         <Routes>
