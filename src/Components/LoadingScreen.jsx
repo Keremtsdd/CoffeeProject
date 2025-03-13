@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const LoadingScreen = () => {
-    const messages = ["Kahveniz Hazırlanıyor...", "Sizin İçin En İyi Seçim ;)"];
+    const messages = ["Kahveniz Hazırlanıyor...", "Sizin İçin En İyi Seçim : )"];
     const [currentMessage, setCurrentMessage] = useState(0);
 
     useEffect(() => {

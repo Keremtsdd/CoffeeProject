@@ -47,9 +47,12 @@ function Home() {
                             alt="sds"
                         />
                         <div className="text-center pl-6">
+
                             <h2 className="text-2xl font-bold">Görselin Yanındaki Metin</h2>
                             <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
+
                         </div>
+
                     </div>
                 </div>
 
@@ -71,6 +74,12 @@ function Home() {
                                 <h2 className='text-2xl font-bold'>Görselin Yanındaki Metin</h2>
 
                                 <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
+
+                                <div className='mt-[80px]  select-none'>
+
+                                    <button className='h-10 w-32 border-2 border-black rounded-sm hover:bg-black duration-500 hover:text-white font-bold '>Button</button>
+
+                                </div>
 
                             </div>
 
