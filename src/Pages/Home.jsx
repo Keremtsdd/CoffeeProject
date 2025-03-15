@@ -118,39 +118,6 @@ function Home() {
 
                 <ReviewSection />
 
-                <div className="h-[550px] flex justify-between space-x-12 mt-32 px-16 bg-slate-800">
-
-                    <div className="h-[100px] w-[800px] ml-52 mt-20" >
-                        <Map />
-                    </div>
-
-                    <div className="space-y-6 w-3/5 mt-28 text-white">
-
-                        <div className='flex space-x-2 ml-20'>
-                            <LocationOnIcon fontSize='large' />
-                            <h1>Konum: Dükkan Adresiniz</h1>
-                        </div>
-                        <div className='flex space-x-2 ml-20'>
-                            <PhoneIcon fontSize='large' />
-                            <h1>Telefon: 0123456789</h1>
-                        </div>
-                        <div className='flex space-x-2 ml-20'>
-                            <EmailIcon fontSize='large' />
-                            <h1>E-posta: info@kahvedukkani.com</h1>
-                        </div>
-
-                        <div className='text-white'>
-                            <h1 className='mb-5 ml-20 mt-14 text-2xl font-bold'>Çalışma Saatleri;</h1>
-                            <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta İçi: 08:00-19:00</h1>
-                            <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta Sonu: 08:00-19:00</h1>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div className='h-72 w-full bg-slate-700 mt-52' ></div>
             </div>
         </>
     )
