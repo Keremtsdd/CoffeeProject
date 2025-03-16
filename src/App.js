@@ -11,6 +11,7 @@ import Location from "./Pages/Location";
 import PagesScrollTop from "./Components/PagesScrollTop";
 import LoadingScreen from './Components/LoadingScreen';
 import React, { useState, useEffect } from 'react';
+import Blog from "./Pages/Blog";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menü" element={<Menü />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/location" element={<Location />} />
         </Routes>
       </div>

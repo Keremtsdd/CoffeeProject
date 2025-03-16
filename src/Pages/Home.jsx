@@ -1,12 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import ReviewSection from "../Pages/ReviewSection";
-import Map from '../Components/Map';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-
 
 function Home() {
     return (

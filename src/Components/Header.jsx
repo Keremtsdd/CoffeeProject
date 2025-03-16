@@ -66,7 +66,7 @@ function Header() {
                             {t("menu")}
                             <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                         </h1>
-                        <h1 className="relative hover:text-orange-600 duration-300 cursor-pointer group pr-1 text-xl">
+                        <h1 onClick={() => navigate('/blog')} className="relative hover:text-orange-600 duration-300 cursor-pointer group pr-1 text-xl">
                             {t("blog")}
                             <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                         </h1>

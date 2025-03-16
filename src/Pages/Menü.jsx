@@ -12,7 +12,7 @@ function Menü() {
                 <img className='h-[500px] w-full ' src="https://wallpapers.com/images/hd/plain-black-desktop-lkf8asac31jppw0w.jpg" alt="Menüİmage" />
 
                 <div className='absolute top-0 left-0 flex flex-col mt-72 ml-72 text-white'>
-                    <h1 className='text-3xl font-bold'>Menü</h1>
+                    <h1 className='text-3xl font-bold'>MENÜ</h1>
 
                     <div className='flex items-center space-x-3 mt-5'>
                         <span className='h-1 w-10  bg-white'></span>

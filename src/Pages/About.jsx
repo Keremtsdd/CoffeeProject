@@ -31,12 +31,12 @@ function About() {
                     alt="aboutfotos"
                 />
 
-                <div className="absolute bottom-4 ml-[650px] transform -translate-x-1/2 bg-black/50 px-4 py-2 rounded-full flex space-x-2">
+                <div className="absolute bottom-3 ml-[650px] transform -translate-x-1/2 bg-black/50 px-4 py-2 rounded-full flex space-x-2">
                     {images.map((_, index) => (
                         <span
                             key={index}
                             onClick={() => setCurrentIndex(index)}
-                            className={`h-2 w-2 rounded-full cursor-pointer transition-all duration-300 ${currentIndex === index ? "bg-white scale-125" : "bg-gray-300"
+                            className={`h-1.5 w-1.5 rounded-full cursor-pointer transition-all duration-300 ${currentIndex === index ? "bg-white scale-125" : "bg-gray-300"
                                 }`}
                         />
                     ))}
@@ -56,7 +56,7 @@ function About() {
 
                     <div className='absolute top-0 left-0 flex flex-col mt-72 ml-72 text-white'>
 
-                        <h1 className='text-4xl font-bold'>Biz Kimiz?</h1>
+                        <h1 className='text-4xl font-bold'>BİZ KİMİZ ?</h1>
 
                         <div className='flex items-center space-x-3 mt-5'>
                             <span className='h-1 w-10 bg-white'></span>
