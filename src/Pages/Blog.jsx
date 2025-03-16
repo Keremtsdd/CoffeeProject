@@ -47,9 +47,9 @@ function Blog() {
                     <div className='h-[250px] w-[1000px] bg-white shadow-xl mt-32 ml-10 rounded-sm '>
 
                         <div className='flex'>
-                            <img className='h-[250px] w-[400px]  ' src="https://info.ehl.edu/hubfs/1440/1440x960-barista.jpg" alt="blog" />
-                            <h1 className='w-[570px] ml-8 mt-5 font-bold hover:text-orange-600 duration-300'>Bizi İnstagramdan Takip Et!</h1>
-                            <p style={{ width: "1200px" }} className='-ml-[290px] mt-[60px]' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab velit possimus aut facilis facere iure labore, magnam repellat nihil tempora animi, doloribus deserunt ipsam distinctio! Saepe odit eaque quibusdam accusamus.</p>
+                            <img className='h-[250px] w-[400px]' src="https://info.ehl.edu/hubfs/1440/1440x960-barista.jpg" alt="blog" />
+                            <h1 className='w-[570px] ml-14 mt-5 font-bold text-lg hover:text-orange-600 duration-300'>Bizi İnstagramdan Takip Et!</h1>
+                            <p style={{ width: "500px" }} className='-ml-[570px] mt-[60px]' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab velit possimus aut facilis facere iure labore, magnam repellat nihil tempora animi, doloribus deserunt ipsam distinctio! Saepe odit eaque quibusdam accusamus.</p>
                         </div>
 
                     </div>
@@ -64,7 +64,7 @@ function Blog() {
                     viewport={{ once: true }}
 
                 >
-                    <div className='h-[45px] w-[50px] -mt-[80px] ml-96 bg-white flex justify-center cursor-pointer'>
+                    <div className='h-[45px] w-[50px] -mt-[70px] ml-[440px] bg-white flex justify-center cursor-pointer'>
 
                         <Link to={"https://www.instagram.com/?flo=true"} target='_blank'>
                             <InstagramIcon fontSize='large' className='mt-0.5 ml-0.5 hover:text-orange-800' />
@@ -108,11 +108,15 @@ function Blog() {
                     viewport={{ once: true }}
 
                 >
-
                     <div className='h-[250px] w-[1000px] bg-white shadow-xl mt-[40px] ml-10 rounded-sm'>
-
-
+                        <div className='flex'>
+                            <h1 className='w-[126px] h-1 font-bold text-lg ml-14 mt-7 hover:text-orange-600 duration-300'>Bizi Ziyaret Et!</h1>
+                            <p style={{ width: "400px" }} className=' -ml-[127px] mt-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, debitis?</p>
+                            <img className='h-[250px] w-[500px] ml-auto' src="https://www.rivaicmimarlik.com/upload/images/sayfalar/2023/kahve-dukkani-dekorasyon-fikirleri-45029-6671568981.jpg" alt="blog" />
+                        </div>
                     </div>
+
+
                 </motion.div>
 
                 <motion.div
@@ -123,13 +127,12 @@ function Blog() {
                     viewport={{ once: true }}
 
                 >
-                    <div className='h-[250px] w-[1000px] bg-white shadow-xl mt-10 ml-10 rounded-sm'>
-
-
+                    <div className='h-[250px] w-[1000px] bg-white shadow-xl mt-10 ml-10 mb-44 rounded-sm'>
+                        <img className='h-[250px] w-[400px]' src="https://media4.giphy.com/media/9uIxmnknkXCDzNF0HY/giphy.gif?cid=6c09b9525ulu1cpauhuvndmn7s1ufpoemqp1ojlbvx7izakf&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="blog" />
                     </div>
 
                 </motion.div>
-                <div className='h-72 w-full bg-neutral-200'></div>
+
 
 
             </div>
