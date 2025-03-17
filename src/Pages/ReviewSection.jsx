@@ -48,9 +48,9 @@ const ReviewSection = () => {
     };
 
     return (
-        <div className="h-auto w-full rounded-sm bg-gray-700 p-6 mt-52 mx-auto flex justify-center items-center">
+        <div className="h-auto w-full rounded-xl bg-gray-700 p-6 mt-52 mx-auto flex justify-center items-center">
             <div className="w-[1000px]">
-                <h2 className="flex justify-center text-3xl mt-7 font-serif mb-4 text-white hover:text-neutral-400 duration-300">Sizin Görüşleriniz :)</h2>
+                <h2 className="flex justify-center text-3xl mt-7 font-serif mb-4 text-white ">Sizin Görüşleriniz</h2>
 
                 {/* Yorum ve Formu Üst Üste Alacak Flex Container */}
                 <div className="flex flex-col gap-8 justify-center mt-10">

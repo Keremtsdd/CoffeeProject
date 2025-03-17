@@ -6,11 +6,12 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Map from '../Components/Map';
+import ReviewSection from '../Pages/ReviewSection';
 
 function Location() {
     const navigate = useNavigate()
     return (
-        <div className="relative">
+        <div className="relative ">
 
             <img className="h-[500px] w-full object-cover" src="https://wallpapers.com/images/hd/plain-black-desktop-lkf8asac31jppw0w.jpg" alt="locationbanner" />
 
@@ -59,8 +60,8 @@ function Location() {
                     </div>
 
                 </div>
-
             </div>
+            <ReviewSection />
         </div>
     )
 }
