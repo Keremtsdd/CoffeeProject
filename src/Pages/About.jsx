@@ -48,7 +48,7 @@ function About() {
 
     return (
         <>
-            <div className='bg-neutral-200'>
+            <div className='bg-neutral-100'>
 
                 <div className='select-none relative'>
 
@@ -59,7 +59,7 @@ function About() {
                         <h1 className='text-4xl font-bold'>BİZ KİMİZ ?</h1>
 
                         <div className='flex items-center space-x-3 mt-5'>
-                            <span className='h-1 w-10 bg-white'></span>
+                            <span className='h-1 w-16 bg-white'></span>
                             <div className='flex items-center space-x-1'>
                                 <h1
                                     onClick={() => navigate('/')}
