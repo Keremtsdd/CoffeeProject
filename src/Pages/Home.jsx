@@ -1,11 +1,11 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import StarIcon from '@mui/icons-material/Star';
+import Footer from '../Components/Footer';
 
 function Home() {
     return (
         <>
-
             <div className='w-full bg-neutral-100 '>
 
                 <video
@@ -34,7 +34,7 @@ function Home() {
 
 
                 <div className="flex justify-center items-center absolute top-full left-0 w-full z-30">
-                    <div className="flex justify-center items-center space-x-8 h-96 w-1/2 bg-white rounded-sm shadow-xl transition-transform hover:scale-105">
+                    <div className="flex justify-center items-center space-x-8 h-96 w-1/2 bg-white rounded-sm shadow-xl">
                         <img
                             className="h-full w-3/6 object-cover rounded-sm select-none"
                             src="https://images.stockcake.com/public/e/0/7/e077b8de-e7d7-427b-9dcd-7b57a766d759_large/steaming-morning-coffee-stockcake.jpg"
@@ -52,7 +52,7 @@ function Home() {
 
                 <motion.div
 
-                    className="transition-colors hover:scale-105"
+                    className=""
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 4, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
@@ -61,7 +61,7 @@ function Home() {
 
                     <div className='flex justify-center items-center mt-14'>
 
-                        <div className='flex justify-center items-center space-x-8 h-96 w-1/2 mt-72 bg-white shadow-xl rounded-sm transition-transform hover:scale-105'>
+                        <div className='flex justify-center items-center space-x-8 h-96 w-1/2 mt-72 bg-white shadow-xl rounded-sm '>
 
                             <div className='text-center'>
 
@@ -71,7 +71,7 @@ function Home() {
 
                                 <div className='mt-[80px]  select-none'>
 
-                                    <button className='h-10 w-32 border-2 border-black rounded-sm hover:bg-black duration-500 hover:text-white font-bold '>Button</button>
+                                    <button className='h-10 w-32 border-2 border-black rounded-sm hover:bg-black/90 duration-500 hover:text-white font-bold '>Button</button>
 
                                 </div>
 
@@ -127,7 +127,8 @@ function Home() {
 
                 </div>
 
-                <div className='h-96 w-full'></div>
+                <Footer />
+
             </div>
         </>
     )

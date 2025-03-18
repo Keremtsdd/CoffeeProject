@@ -5,7 +5,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { motion } from "framer-motion";
 import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
 
-
 function Blog() {
     const navigate = useNavigate();
 
@@ -124,7 +123,7 @@ function Blog() {
                         <div className='h-80 w-96 opacity-85 bg-white absolute bottom-20 left-10 transition-all duration-500 rounded-sm group-hover:left-1/2 group-hover:-bottom-20 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2'>
 
                             <h1 onClick={() => navigate('/menü')} className='mt-6 ml-10 text-2xl font-bold hover:text-orange-800 duration-300 cursor-pointer'>Menümüze Göz Atın <ExpandMoreTwoToneIcon className='mb-1' /></h1>
-                            <span className='block h-1 w-20 bg-black mt-1 ml-10 '></span>
+                            <span className='block h-1 w-20 bg-black mt-1 ml-10 rounded-sm'></span>
                             <p style={{ width: "363px" }} className='ml-5 mt-10'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ducimus incidunt aspernatur blanditiis eum deserunt?</p>
 
                             <button onClick={() => navigate('/menü')} className='h-9 w-32 mt-10  ml-[120px] text-xl font-serif bg-white border-2 border-black rounded-sm hover:border-orange-900 hover:bg-orange-800 hover:text-white duration-300 '>Menü</button>
