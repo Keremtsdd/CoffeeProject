@@ -5,11 +5,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { motion } from "framer-motion";
 import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
 
+
 function Blog() {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <>
 
             <div className='select-none relative'>
 
@@ -111,13 +112,13 @@ function Blog() {
                 </motion.div>
 
                 <motion.div
-                    className="transition-colors hover:scale-105"
+                    className="transition-colors hover:scale-105 mb-[150px]"
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 4, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
                 >
-                    <div className='h-[450px] w-[1000px] relative bg-white shadow-xl mt-10 ml-10 group'>
+                    <div className='h-[450px] w-[1000px] relative bg-white mt-10 ml-10 group'>
                         <img className='h-[450px] w-[1000px]' src="https://www.rivaicmimarlik.com/upload/images/sayfalar/2022/butik-cafe-ic-mimari-tasarimi-44923-5089991667.jpg" alt="blog" />
 
                         <div className='h-80 w-96 opacity-85 bg-white absolute bottom-20 left-10 transition-all duration-500 rounded-sm group-hover:left-1/2 group-hover:-bottom-20 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2'>
@@ -136,7 +137,9 @@ function Blog() {
 
             </div>
 
-        </div>
+
+
+        </>
     )
 }
 

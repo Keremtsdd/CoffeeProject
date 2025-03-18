@@ -51,8 +51,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/location" element={<Location />} />
         </Routes>
+        <Footer />
       </div>
-
     </BrowserRouter>
   );
 }

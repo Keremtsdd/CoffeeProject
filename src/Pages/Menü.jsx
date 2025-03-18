@@ -28,7 +28,6 @@ function Menü() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
     )

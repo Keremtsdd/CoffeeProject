@@ -114,7 +114,7 @@ function Home() {
 
                         </div>
 
-                        <div className='h-[400px] w-[300px] text-center bg-white shadow-2xl ml-10 transition-transform hover:scale-105 border-2 border-black/15' >
+                        <div className='h-[400px] w-[300px] text-center bg-white shadow-2xl ml-10 transition-transform hover:scale-105 border-2 border-black/15 mb-44' >
 
                             <img className='h-[250px] w-64 m-5 select-none' src="https://perkupcoffee.co/cdn/shop/articles/filtre-kahve-fiyatlari.webp?v=1730969828&width=1100" alt="FiltreKahve" />
                             <h1 className='flex justify-center -mt-[10px] text-xl font-bold' >Filtre Kahve</h1>

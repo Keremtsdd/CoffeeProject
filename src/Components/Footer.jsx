@@ -6,11 +6,11 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import XIcon from '@mui/icons-material/X';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Footer() {
     const navigate = useNavigate();
@@ -22,7 +22,7 @@ function Footer() {
         e.preventDefault();
 
         if (!email) {
-            setMessage("Lütfen e-posta adresinizi girin!");
+            setMessage("Lütfen bir e-posta adresi girin!");
             setIsError(true);
         } else {
             setMessage("E-posta adresiniz kaydedildi.");
@@ -36,10 +36,10 @@ function Footer() {
         <>
             <div className='flex select-none'>
                 <div className="h-[350px] w-[800px] bg-black text-white flex flex-col items-center">
-                    <h1 onClick={() => navigate('/')} className="font-bold text-5xl mt-20">
+                    <h1 onClick={() => navigate('/')} className="font-bold text-5xl mt-20 cursor-pointer">
                         LOGO
                     </h1>
-                    <p className="mt-2 font-serif">Lorem ipsum dolor sit amet.</p>
+                    <p className="mt-2 font-serif cursor-text">Lorem ipsum dolor sit amet.</p>
 
                     <div className="flex items-center space-x-5 mt-7 cursor-pointer">
                         <Link to={"https://www.instagram.com/"} target='_blank'>
@@ -79,24 +79,24 @@ function Footer() {
                     <p className="mt-6 text-sm text-center select-text selection:bg-orange-700">Copyright © 2025 Your Company Name. Tüm Hakları Saklıdır.</p>
                 </div>
 
-                <div className='flex h-[350px] w-full bg-white mt-32 '>
+                <div className='flex h-[350px] w-full bg-white'>
                     <div>
                         <h1 className='mt-14 ml-52 font-bold text-3xl'>İletişim</h1>
-                        <span className='h-1 w-14  ml-[209px] rounded-sm bg-black block hover:bg-white'></span>
-                        <p style={{ width: "350px" }} className="mt-5 ml-[205px] font-serif flex items-center select-text selection:bg-orange-600 hover:text-orange-700 duration-300"><LocationOnOutlinedIcon className="mr-3 " />Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt. </p>
-                        <p className='ml-[205px] mt-5 text-lg font-serif flex items-center select-text selection:bg-orange-600 hover:text-orange-700 duration-300'><LocalPhoneOutlinedIcon className='mr-2' /> +90 542 102 00 28</p>
-                        <p className='ml-[206px] mt-5 font-serif text-lg select-text selection:bg-orange-600 hover:text-orange-700 duration-300'><EmailOutlinedIcon className='mr-2 mb-0.5' /> info@dükkan.com</p>
+                        <span className='h-1 w-12  ml-[209px] rounded-sm bg-black block'></span>
+                        <p onClick={() => navigate('/location')} style={{ width: "318px" }} className="mt-5 ml-[205px] font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-pointer"><LocationOnOutlinedIcon className="mr-3 " />Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt. </p>
+                        <p className='ml-[205px] mt-5 text-lg font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-default'><LocalPhoneOutlinedIcon className='mr-2' /> +90 542 102 00 28</p>
+                        <p className='ml-[206px] mt-5 font-serif text-lg select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-default'><EmailOutlinedIcon className='mr-2 mb-0.5' /> info@dükkan.com</p>
                     </div>
                     <div>
                         <h1 className='mt-14 ml-28 font-bold text-3xl'>Menü</h1>
-                        <span className='h-1 w-10 ml-[114px] rounded-sm bg-black block hover:bg-white'></span>
+                        <span className='h-1 w-10 ml-[114px] rounded-sm bg-black block'></span>
                         <p className='mt-5 ml-[106px] cursor-pointer hover:underline hover:text-orange-700 duration-300'><KeyboardArrowRightIcon />Soğuk İçecekler</p>
                         <p className='mt-1 ml-[106px] cursor-pointer hover:underline hover:text-orange-700 duration-300'><KeyboardArrowRightIcon />Sıcak İçecekler</p>
                         <p className='mt-1 ml-[106px] cursor-pointer hover:underline hover:text-orange-700 duration-300'><KeyboardArrowRightIcon />Yiyecekler</p>
                     </div>
                     <div>
                         <h1 className='font-bold text-3xl mt-14 ml-[111px]'>Bülten/Haber</h1>
-                        <span className='h-1 w-14 ml-[114px] rounded-sm bg-black block hover:bg-white'></span>
+                        <span className='h-1 w-14 ml-[114px] rounded-sm bg-black block'></span>
                         <p style={{ width: "200px" }} className='text-xs mt-6 ml-[116px] hover:text-orange-700 duration-300 '>Güncel bültenden haberdar olmak için e-posta listemize kayıt olun.</p>
 
                         <form onSubmit={handleSubmit} className="flex items-center gap-0 mt-2 ml-[115px]">
@@ -112,7 +112,7 @@ function Footer() {
                                 type="submit"
                                 className="h-11 w-12 mt-1 border-2 bg-black border-black flex items-center justify-center"
                             >
-                                <ArrowCircleRightOutlinedIcon style={{ width: "32px", height: "32px" }} className="text-white hover:text-neutral-400" />
+                                <ArrowForwardIcon style={{ width: "26px", height: "30px" }} className="text-white hover:text-neutral-400" />
                             </button>
                         </form>
                         {message && (

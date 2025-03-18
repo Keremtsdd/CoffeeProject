@@ -48,7 +48,7 @@ const ReviewSection = () => {
     };
 
     return (
-        <div className="h-auto w-full rounded-xl bg-gray-700 p-6 mt-52 mx-auto flex justify-center items-center">
+        <div className="h-auto w-full bg-gray-700 p-6 mt-52 mx-auto flex justify-center items-center">
             <div className="w-[1000px]">
                 <h2 className="flex justify-center text-3xl mt-7 font-serif mb-4 text-white ">Sizin Görüşleriniz</h2>
 
