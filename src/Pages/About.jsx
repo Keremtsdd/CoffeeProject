@@ -97,8 +97,6 @@ function About() {
 
                 </div>
 
-                <div className='h-72 w-full'></div>
-
             </div>
         </>
     );

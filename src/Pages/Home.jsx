@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import StarIcon from '@mui/icons-material/Star';
-import Footer from '../Components/Footer';
 
 function Home() {
     return (
@@ -126,8 +125,6 @@ function Home() {
                     </div>
 
                 </div>
-
-                <Footer />
 
             </div>
         </>
