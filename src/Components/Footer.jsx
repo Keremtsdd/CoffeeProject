@@ -87,12 +87,12 @@ function Footer() {
                         <p className='ml-[205px] mt-5 text-lg font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-default'><LocalPhoneOutlinedIcon className='mr-2' /> +90 542 102 00 28</p>
                         <p className='ml-[206px] mt-5 font-serif text-lg select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-default'><EmailOutlinedIcon className='mr-2 mb-0.5' /> info@dükkan.com</p>
                     </div>
-                    <div>
+                    <div className='group'>
                         <h1 className='mt-14 ml-28 font-bold text-3xl'>Menü</h1>
                         <span className='h-1 w-10 ml-[114px] rounded-sm bg-black block'></span>
-                        <p className='mt-5 ml-[106px] cursor-pointer hover:underline hover:text-orange-700 duration-300'><KeyboardArrowRightIcon />Soğuk İçecekler</p>
-                        <p className='mt-1 ml-[106px] cursor-pointer hover:underline hover:text-orange-700 duration-300'><KeyboardArrowRightIcon />Sıcak İçecekler</p>
-                        <p className='mt-1 ml-[106px] cursor-pointer hover:underline hover:text-orange-700 duration-300'><KeyboardArrowRightIcon />Yiyecekler</p>
+                        <p className='mt-5 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Sıcak İçecekler</p>
+                        <p className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Soğuk İçecekler</p>
+                        <p className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Yiyecekler</p>
                     </div>
                     <div>
                         <h1 className='font-bold text-3xl mt-14 ml-[111px]'>Bülten/Haber</h1>

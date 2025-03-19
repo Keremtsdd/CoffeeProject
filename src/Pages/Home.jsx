@@ -94,7 +94,7 @@ function Home() {
 
                             <img className='h-[250px] w-64 m-5 select-none' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/1200px-Caffe_Latte_at_Pulse_Cafe.jpg" alt="Latte" />
                             <h1 className='flex justify-center -mt-[10px] text-xl font-bold' >Latte</h1>
-                            <p className='mr-2 mt-3'> <StarIcon fontSize='inherit' className='mb-1' /> Özel Tarifimizle Hazırlanan Latte Deneyimini Yaşayın</p>
+                            <p className='mr-2 mt-3  font-serif'> <StarIcon fontSize='inherit' className='mb-1.5' /> Özel Tarifimizle Hazırlanan Latte Deneyimini Yaşayın</p>
 
                         </div>
 
@@ -102,7 +102,7 @@ function Home() {
 
                             <img className='h-[250px] w-64 m-5 select-none' src="https://cdn.shopify.com/s/files/1/0569/3987/2340/files/espresso_romano.jpg?v=1731414626" alt="Espresso" />
                             <h1 className='flex justify-center -mt-[10px] text-xl font-bold' >Espresso</h1>
-                            <p className='mr-2 mt-3'> <StarIcon fontSize='inherit' className='mb-1' /> Özel Tarifimizle Hazırlanan Espresso Deneyimini Yaşayın</p>
+                            <p className='mr-2 mt-3  font-serif'> <StarIcon fontSize='inherit' className='mb-1.5' /> Özel Tarifimizle Hazırlanan Espresso Deneyimini Yaşayın</p>
 
                         </div>
 
@@ -110,7 +110,7 @@ function Home() {
 
                             <img className='h-[250px] w-64 m-5 select-none' src="https://cdn.shopify.com/s/files/1/0264/5809/5650/files/cafe-mocha-main.jpg?v=1684949671" alt="Mocha" />
                             <h1 className='flex justify-center -mt-[10px] text-xl font-bold' >Mocha</h1>
-                            <p className='mr-2 mt-3'> <StarIcon fontSize='inherit' className='mb-1' /> Özel Tarifimizle Hazırlanan Mocha Deneyimini Yaşayın</p>
+                            <p className='mr-2 mt-3  font-serif'> <StarIcon fontSize='inherit' className='mb-1.5' /> Özel Tarifimizle Hazırlanan Mocha Deneyimini Yaşayın</p>
 
                         </div>
 
@@ -118,13 +118,15 @@ function Home() {
 
                             <img className='h-[250px] w-64 m-5 select-none' src="https://perkupcoffee.co/cdn/shop/articles/filtre-kahve-fiyatlari.webp?v=1730969828&width=1100" alt="FiltreKahve" />
                             <h1 className='flex justify-center -mt-[10px] text-xl font-bold' >Filtre Kahve</h1>
-                            <p className='mr-2 mt-3'> <StarIcon fontSize='inherit' className='mb-1' /> Özel Tarifimizle Hazırlanan Filtre Kahve Deneyimini Yaşayın</p>
+                            <p className='mr-2 mt-3  font-serif'> <StarIcon fontSize='inherit' className='mb-1.5' /> Özel Tarifimizle Hazırlanan Filtre Kahve Deneyimini Yaşayın</p>
 
                         </div>
 
                     </div>
 
                 </div>
+
+
 
             </div>
         </>
