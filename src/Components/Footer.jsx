@@ -82,9 +82,9 @@ function Footer() {
                 <div className='flex h-[350px] w-full bg-white'>
                     <div>
                         <h1 className='mt-14 ml-52 font-bold text-3xl'>İletişim</h1>
-                        <span className='h-1 w-12  ml-[209px] rounded-sm bg-black block'></span>
-                        <p onClick={() => navigate('/location')} style={{ width: "318px" }} className="mt-5 ml-[205px] font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-pointer"><LocationOnOutlinedIcon className="mr-3 " />Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt. </p>
-                        <p className='ml-[205px] mt-5 text-lg font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-default'><LocalPhoneOutlinedIcon className='mr-2' /> +90 542 102 00 28</p>
+                        <span className='h-1 w-12 ml-[209px] rounded-sm bg-black block'></span>
+                        <p onClick={() => navigate('/location')} style={{ width: "318px" }} className="mt-5 ml-[205px] font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-pointer"><LocationOnOutlinedIcon className="mr-3 " />Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt.</p>
+                        <p className='ml-[205px] mt-5 text-lg font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-pointer'><a href="tel:+905421020028" className="flex items-center"><LocalPhoneOutlinedIcon className='mr-2' />+90 542 102 00 28</a></p>
                         <p className='ml-[206px] mt-5 font-serif text-lg select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-default'><EmailOutlinedIcon className='mr-2 mb-0.5' /> info@dükkan.com</p>
                     </div>
                     <div className='group'>
