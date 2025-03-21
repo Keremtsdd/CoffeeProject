@@ -5,6 +5,7 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 
 const ReviewSection = () => {
+
     const [reviews, setReviews] = useState([]);
     const [name, setName] = useState("");
     const [comment, setComment] = useState("");
@@ -19,6 +20,7 @@ const ReviewSection = () => {
 
     // Yeni yorum ekleme fonksiyonu
     const handleAddReview = () => {
+
         if (!name || !comment) return alert("Lütfen adınızı ve yorumunuzu girin!");
 
         const newReview = { name, comment, rating };
@@ -40,16 +42,20 @@ const ReviewSection = () => {
 
     // Yorumları Göster/Gizle Fonksiyonu
     const toggleShowReviews = () => {
+
         if (visibleReviews < reviews.length) {
             setVisibleReviews(reviews.length); // Tüm yorumları göster
         } else {
             setVisibleReviews(5); // Başlangıçta 5 yorum göster
         }
+
     };
 
     return (
         <div className="h-auto w-full bg-gray-700 p-6 mt-52 mx-auto flex justify-center items-center">
+
             <div className="w-[1000px]">
+
                 <h2 className="flex justify-center text-3xl mt-7 font-serif mb-4 text-white ">Sizin Görüşleriniz</h2>
 
                 {/* Yorum ve Formu Üst Üste Alacak Flex Container */}
@@ -57,7 +63,9 @@ const ReviewSection = () => {
 
                     {/* Yorum Ekleme Formu */}
                     <div className="flex flex-col gap-4 w-full">
+
                         <div className="relative">
+
                             <input
                                 type="text"
                                 className="w-full p-2 border-none rounded bg-gray-800 text-white"
@@ -65,9 +73,11 @@ const ReviewSection = () => {
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
+
                             <span
                                 className="absolute left-0 bottom-0 w-full h-0.5 bg-orange-600 transform scale-x-0 transition-all duration-300 focus:scale-x-100 focus:bottom-0"
                             ></span>
+
                         </div>
 
                         <textarea
@@ -76,27 +86,36 @@ const ReviewSection = () => {
                             value={comment}
                             onChange={(e) => setComment(e.target.value)}
                         />
+
                         <StarRating rating={rating} setRating={setRating} />
+
                         <button
                             className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 duration-300"
                             onClick={handleAddReview}
                         >
                             Yorumu Gönder
                         </button>
+
                     </div>
 
                     {/* Yorumları Listeleme */}
                     <div className="w-full">
+
                         {reviewsToDisplay.length === 0 ? (
                             <p className="text-white">Henüz yorum yok. İlk yorumu sen ekle! 😊</p>
                         ) : (
+
                             reviewsToDisplay.map((review, index) => (
                                 <div key={index} className="p-3 border-b last:border-none bg-gray-800 rounded mb-2">
+
                                     <div className="flex items-center mb-2">
+
                                         <h3 className="font-bold text-white">{review.name}</h3>
                                         <p className="text-yellow-500 ml-2">{"⭐".repeat(review.rating)}</p>
+
                                     </div>
                                     <p className="text-white">{review.comment}</p>
+
                                 </div>
                             ))
                         )}
@@ -119,8 +138,11 @@ const ReviewSection = () => {
                         </h1>
 
                     </div>
+
                 </div>
+
             </div>
+
         </div>
     );
 };

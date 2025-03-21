@@ -11,6 +11,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import XIcon from '@mui/icons-material/X';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CopyrightIcon from '@mui/icons-material/Copyright';
 
 function Footer() {
     const navigate = useNavigate();
@@ -35,13 +36,17 @@ function Footer() {
     return (
         <>
             <div className='flex select-none'>
+
                 <div className="h-[350px] w-[800px] bg-black text-white flex flex-col items-center">
+
                     <h1 onClick={() => navigate('/')} className="font-bold text-5xl mt-20 cursor-pointer">
                         LOGO
                     </h1>
+
                     <p className="mt-2 font-serif cursor-text">Lorem ipsum dolor sit amet.</p>
 
                     <div className="flex items-center space-x-5 mt-7 cursor-pointer">
+
                         <Link to={"https://www.instagram.com/"} target='_blank'>
                             <motion.div
                                 whileHover={{ scale: 1.2, opacity: 1 }}
@@ -50,6 +55,7 @@ function Footer() {
                                 <InstagramIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500 duration-300 transition-colors" />
                             </motion.div>
                         </Link>
+
                         <Link to={"https://www.Whatsapp.com/"} target='_blank'>
                             <motion.div
                                 whileHover={{ scale: 1.2, opacity: 0.8 }}
@@ -58,6 +64,7 @@ function Footer() {
                                 <WhatsAppIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500 transition-colors" />
                             </motion.div>
                         </Link>
+
                         <Link to={"https://www.youtube.com/"} target='_blank'>
                             <motion.div
                                 whileHover={{ scale: 1.2, opacity: 0.8 }}
@@ -66,6 +73,7 @@ function Footer() {
                                 <YouTubeIcon style={{ width: "37px", height: "37px" }} className=" text-white hover:text-orange-500 transition-colors" />
                             </motion.div>
                         </Link>
+
                         <Link to={"https://www.x.com/"} target='_blank'>
                             <motion.div
                                 whileHover={{ scale: 1.2, opacity: 0.8 }}
@@ -74,12 +82,16 @@ function Footer() {
                                 <XIcon style={{ width: "28px", height: "28px" }} className=" text-white hover:text-orange-500 transition-colors" />
                             </motion.div>
                         </Link>
+
                     </div>
-                    <span className='h-0.5 w-[515px] rounded-sm bg-white/10 block mt-14'></span>
-                    <p className="mt-6 text-sm text-center select-text selection:bg-orange-700">Copyright © 2025 Your Company Name. Tüm Hakları Saklıdır.</p>
+
+                    <span className='h-0.5 w-[515px] rounded-sm bg-white/30 block mt-14'></span>
+                    <p className="mt-6 text-sm text-center select-text selection:bg-orange-700">Copyright <CopyrightIcon style={{ width: "17px", height: "17px" }} className='mb-0.5' /> 2025 Your Company Name. Tüm Hakları Saklıdır.</p>
+
                 </div>
 
                 <div className='flex h-[350px] w-full bg-white'>
+
                     <div>
                         <h1 className='mt-14 ml-52 font-bold text-3xl'>İletişim</h1>
                         <span className='h-1 w-12 ml-[209px] rounded-sm bg-black block'></span>
@@ -87,6 +99,7 @@ function Footer() {
                         <p className='ml-[205px] mt-5 text-lg font-serif flex items-center select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-pointer'><a href="tel:+905421020028" className="flex items-center"><LocalPhoneOutlinedIcon className='mr-2' />+90 542 102 00 28</a></p>
                         <p className='ml-[206px] mt-5 font-serif text-lg select-text selection:bg-orange-400 hover:text-orange-700 duration-300 cursor-default'><EmailOutlinedIcon className='mr-2 mb-0.5' /> info@dükkan.com</p>
                     </div>
+
                     <div className='group'>
                         <h1 className='mt-14 ml-28 font-bold text-3xl'>Menü</h1>
                         <span className='h-1 w-10 ml-[114px] rounded-sm bg-black block'></span>
@@ -94,10 +107,12 @@ function Footer() {
                         <p className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Soğuk İçecekler</p>
                         <p className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Yiyecekler</p>
                     </div>
+
                     <div>
+
                         <h1 className='font-bold text-3xl mt-14 ml-[111px]'>Bülten/Haber</h1>
                         <span className='h-1 w-14 ml-[114px] rounded-sm bg-black block'></span>
-                        <p style={{ width: "200px" }} className='text-xs mt-6 ml-[116px] hover:text-orange-700 duration-300 '>Güncel bültenden haberdar olmak için e-posta listemize kayıt olun.</p>
+                        <p style={{ width: "250px" }} className='text-xs mt-5 ml-[116px] hover:text-orange-800 duration-300 '>Kahve tutkunları için özel fırsatlar, yeni ürünler ve lezzetli tarifler doğrudan e-postanıza gelsin! Bültenimize kaydolun, kahve deneyiminizi bir adım öteye taşıyın.</p>
 
                         <form onSubmit={handleSubmit} className="flex items-center gap-0 mt-2 ml-[115px]">
                             <input
@@ -120,9 +135,13 @@ function Footer() {
                                 {message}
                             </p>
                         )}
+
                     </div>
+
                 </div>
+
             </div>
+
         </>
     );
 }

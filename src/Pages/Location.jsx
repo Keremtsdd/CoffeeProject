@@ -16,20 +16,29 @@ function Location() {
             <img className="h-[500px] w-full object-cover" src="https://wallpapers.com/images/hd/plain-black-desktop-lkf8asac31jppw0w.jpg" alt="locationbanner" />
 
             <div className='absolute top-0 left-0 flex flex-col mt-72 ml-72 text-white'>
+
                 <h1 className='text-4xl font-bold'>BİZİ ZİYARET EDİN</h1>
+
                 <div className='flex items-center space-x-3 mt-5'>
+
                     <span className='h-1 w-16 bg-white'></span>
+
                     <div className='flex items-center space-x-1'>
+
                         <h1
                             onClick={() => navigate('/')}
                             className='text-sm text-neutral-400 hover:text-white cursor-pointer duration-300'
                         >
                             Anasayfa
                         </h1>
+
                         <ArrowRightAltIcon fontSize='small' className='mt-0.5' />
                         <h1 className='text-md'>Bizi Ziyaret Edin</h1>
+
                     </div>
+
                 </div>
+
             </div>
 
             <div className="flex justify-between space-x-12 mt-32 px-16">
@@ -44,10 +53,12 @@ function Location() {
                         <LocationOnIcon fontSize='large' />
                         <h1>Konum: Dükkan Adresiniz</h1>
                     </div>
+
                     <div className='flex space-x-2 ml-20'>
                         <PhoneIcon fontSize='large' />
                         <h1>Telefon: 0123456789</h1>
                     </div>
+
                     <div className='flex space-x-2 ml-20'>
                         <EmailIcon fontSize='large' />
                         <h1>E-posta: info@kahvedukkani.com</h1>
@@ -60,6 +71,7 @@ function Location() {
                     </div>
 
                 </div>
+
             </div>
             <ReviewSection />
         </div>

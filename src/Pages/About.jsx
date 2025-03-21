@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 function About() {
+
     const navigate = useNavigate();
     const images = [
         "https://ideacdn.net/idea/li/11/myassets/blogs/blog-10.jpg?revision=1674214100",
@@ -40,6 +41,7 @@ function About() {
                                 }`}
                         />
                     ))}
+
                 </div>
 
             </div>
@@ -67,12 +69,16 @@ function About() {
                                 >
                                     Anasayfa
                                 </h1>
+
                                 <ArrowRightAltIcon fontSize='small' className='mt-0.5' />
                                 <h2 className='text-md'>Biz Kimiz?</h2>
+
                             </div>
 
                         </div>
+
                     </div>
+
                 </div>
 
                 <div>
@@ -84,21 +90,23 @@ function About() {
                             <span className="block h-1 w-16 bg-black mb-4 ml-8 mt-1.5 rounded-sm"></span>
                             <p style={{ width: "550px" }} className='font-serif text-lg flex items-start ml-7'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam labore corporis blanditiis laudantium iste atque? Soluta vero provident, fugit eaque id aut ipsa eum sequi veniam quae corporis voluptatum eligendi nulla necessitatibus quos perferendis dignissimos animi, aliquid, reiciendis suscipit! Iure maiores tenetur nam laboriosam. Illo suscipit aut aliquid quo repellat, eum distinctio iste eligendi fuga quas vel maiores eius, eveniet, quaerat laborum voluptates! Repudiandae earum officia quia numquam deleniti dignissimos atque voluptates, nisi laboriosam pariatur aliquid perspiciatis, a praesentium dicta culpa ipsam porro optio tempore rem sequi quo neque! Sequi ratione officiis quos libero mollitia expedita, hic iure maiores ut.</p>
                         </div>
+
                     </div>
 
                     <div>
+
                         <div>
+
                             <h1 className='mt-56 font-bold text-4xl ml-[400px] '>NEDEN BİZ ?</h1>
                             <span className="block h-1 w-16 bg-black mb-4 mt-1.5 rounded-sm ml-[400px]"></span>
                             <p style={{ width: "550px" }} className='font-serif text-lg ml-[400px] '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam labore corporis blanditiis laudantium iste atque? Soluta vero provident, fugit eaque id aut ipsa eum sequi veniam quae corporis voluptatum eligendi nulla necessitatibus quos perferendis dignissimos animi, aliquid, reiciendis suscipit! Iure maiores tenetur nam laboriosam. Illo suscipit aut aliquid quo repellat, eum distinctio iste eligendi fuga quas vel maiores eius, eveniet, quaerat laborum voluptates! Repudiandae earum officia quia numquam deleniti dignissimos atque voluptates, nisi laboriosam pariatur aliquid perspiciatis, a praesentium dicta culpa ipsam porro optio tempore rem sequi quo neque! Sequi ratione officiis quos libero mollitia expedita, hic iure maiores ut.</p>
+
                         </div>
                         <img className='h-[500px] w-[500px] rounded-sm ml-[1020px] -mt-[450px]  shadow-xl hover:opacity-90 duration-300' src="https://www.buseterim.com.tr/upload/default/2019/9/30/kahvehakkndabilmenizgerekenler1000.jpg" alt="Aboutİmg" />
                     </div>
 
                 </div>
-
                 <div className='h-[150px] w-full bg-neutral-100'></div>
-
             </div>
         </>
     );

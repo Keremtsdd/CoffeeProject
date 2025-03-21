@@ -15,19 +15,27 @@ function Menü() {
                     <h1 className='text-4xl font-bold'>MENÜ</h1>
 
                     <div className='flex items-center space-x-3 mt-5'>
+
                         <span className='h-1 w-16  bg-white'></span>
+
                         <div className='flex items-center space-x-1'>
+
                             <h2
                                 onClick={() => navigate('/')}
                                 className='text-sm text-neutral-400 hover:text-white cursor-pointer duration-300'
                             >
                                 Anasayfa
                             </h2>
+
                             <ArrowRightAltIcon fontSize='small' className='mt-0.5' />
                             <h2 className='text-md'>Menü</h2>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
         </>
     )
