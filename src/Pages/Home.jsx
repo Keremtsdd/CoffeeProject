@@ -6,7 +6,6 @@ import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRig
 import { useNavigate } from 'react-router-dom';
 
 
-
 function Home() {
     const navigate = useNavigate()
     return (
@@ -167,7 +166,7 @@ function Home() {
                             <h1 className='pt-10 pl-10 text-2xl font-bold'><CollectionsIcon fontSize='large' className='mb-1 mr-1' />FOTO GALERİ </h1>
                             <span className='h-1 w-20 mt-0.5 ml-10 rounded-sm bg-black block'></span>
 
-                            <p style={{ width: "300px" }} className='pl-10 pt-5 selection:bg-orange-600'><SubdirectoryArrowRightIcon style={{ width: "18px", height: "18px" }} className='-mt-1.5 mr-0.5' />Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sequi. Accusamus possimus nostrum quasi nobis. Aliquam dolorum eius repellat voluptatibus.</p>
+                            <p style={{ width: "300px" }} className='pl-10 pt-5 selection:bg-orange-600 hover:text-orange-700 duration-300'><SubdirectoryArrowRightIcon style={{ width: "18px", height: "18px" }} className='-mt-1.5 mr-0.5' />Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sequi. Accusamus possimus nostrum quasi nobis. Aliquam dolorum eius repellat voluptatibus.</p>
 
                         </div>
 
@@ -188,6 +187,9 @@ function Home() {
                 </div>
 
                 <div className='bg-neutral-100 w-full h-[110px]'></div>
+
+
+
 
             </div>
 

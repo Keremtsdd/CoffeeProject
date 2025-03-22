@@ -4,6 +4,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { motion } from "framer-motion";
 import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 
 
 function Blog() {
@@ -61,7 +62,7 @@ function Blog() {
 
                                 <img className='h-[250px] w-[400px]' src="https://info.ehl.edu/hubfs/1440/1440x960-barista.jpg" alt="blog" />
                                 <h1 className='w-[235px] ml-14 mt-5 font-bold text-lg hover:text-orange-600 duration-300'>Bizi İnstagramdan Takip Et!</h1>
-                                <p style={{ width: "500px" }} className='-ml-[234px] mt-[60px]' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab velit possimus aut facilis facere iure labore, magnam repellat nihil tempora animi, doloribus deserunt ipsam distinctio! Saepe odit eaque quibusdam accusamus.</p>
+                                <p style={{ width: "500px" }} className='-ml-[234px] mt-[60px]' ><SubdirectoryArrowRightIcon style={{ width: "18px", height: "18px" }} className='mb-1 mr-1' />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab velit possimus aut facilis facere iure labore, magnam repellat nihil tempora animi, doloribus deserunt ipsam distinctio! Saepe odit eaque quibusdam accusamus.</p>
 
                             </div>
 
@@ -115,7 +116,7 @@ function Blog() {
                         <div className='flex'>
 
                             <h1 onClick={() => navigate('/location')} className='w-[126px] h-1 font-bold text-lg ml-14 mt-7 hover:text-orange-600 duration-300 cursor-pointer'>Bizi Ziyaret Et!</h1>
-                            <p style={{ width: "400px" }} className=' -ml-[127px] mt-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, debitis?</p>
+                            <p style={{ width: "400px" }} className=' -ml-[127px] mt-16'><SubdirectoryArrowRightIcon style={{ width: "18px", height: "18px" }} className='mb-1 mr-1' />Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, debitis?</p>
                             <img className='h-[250px] w-[450px] ml-auto' src="https://www.rivaicmimarlik.com/upload/images/sayfalar/2023/kahve-dukkani-dekorasyon-fikirleri-45029-6671568981.jpg" alt="blog" />
 
                         </div>
@@ -144,7 +145,7 @@ function Blog() {
 
                             <h1 onClick={() => navigate('/menü')} className='mt-6 ml-10 text-2xl font-bold hover:text-orange-800 duration-300 cursor-pointer'>Menümüze Göz Atın <ExpandMoreTwoToneIcon className='mb-1' /></h1>
                             <span className='block h-1 w-20 bg-black mt-1 ml-10 rounded-sm'></span>
-                            <p style={{ width: "363px" }} className='ml-5 mt-10'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ducimus incidunt aspernatur blanditiis eum deserunt?</p>
+                            <p style={{ width: "300px" }} className='ml-[40px] mt-6'><SubdirectoryArrowRightIcon style={{ width: "18px", height: "18px" }} className='mb-1 mr-1' />Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ducimus incidunt aspernatur blanditiis eum deserunt?</p>
                             <button onClick={() => navigate('/menü')} className='h-9 w-32 mt-10  ml-[120px] text-xl font-serif bg-white border-2 border-black rounded-sm hover:border-orange-900 hover:bg-orange-800 hover:text-white duration-300 '>Menü</button>
 
                         </div>
@@ -154,8 +155,6 @@ function Blog() {
                 </motion.div>
 
             </div>
-
-
 
         </>
     )
