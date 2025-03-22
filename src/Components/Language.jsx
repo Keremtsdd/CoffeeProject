@@ -16,13 +16,12 @@ function Language() {
                 <div className="relative group">
                     <LanguageIcon
                         style={{ width: "18px", height: "18px" }}
-                        className="mr-1 -mt-0.5"
+                        className=" -mt-[2.5px]"
                     />
                     <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 hidden group-hover:block bg-gray-700 text-white text-xs rounded px-2 py-2">
                         Language
                     </span>
                 </div>
-
 
                 <h1
                     className="hover:text-neutral-400 duration-150 cursor-pointer flex"

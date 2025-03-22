@@ -5,7 +5,6 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 import { useNavigate } from 'react-router-dom';
 
-
 function Home() {
     const navigate = useNavigate()
     return (
@@ -97,7 +96,7 @@ function Home() {
                 <div>
 
                     <h1 className='w-[380px] flex  ml-[771px] mt-28 font-bold text-4xl hover:text-orange-800 duration-300 select-none'>Favori Kahvelerimiz</h1>
-                    <span className='h-1 w-[80px] bg-black block ml-[773px] mt-1'></span>
+                    <span className='h-1 w-[80px] bg-black rounded-sm block ml-[773px] mt-1'></span>
 
                     <div className='flex justify-center mt-[80px] selection:bg-orange-600'>
 
@@ -187,9 +186,6 @@ function Home() {
                 </div>
 
                 <div className='bg-neutral-100 w-full h-[110px]'></div>
-
-
-
 
             </div>
 
