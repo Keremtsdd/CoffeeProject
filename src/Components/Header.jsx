@@ -85,10 +85,10 @@ function Header() {
                             <div className="absolute left-0 w-40 bg-slate-800 text-white border-gray-300 rounded-sm shadow-lg mt-1">
                                 <ul className="py-2">
                                     {[
-                                        { name: "İletişim", path: "/contact" },
+                                        { name: "İletişim", path: "" },
                                         { name: "Bizi Ziyaret Edin", path: "/location" },
-                                        { name: "BBBBBB", path: "/bbbbbb" },
-                                        { name: "CCCCCC", path: "/cccccc" },
+                                        { name: "BBBBBB", path: "" },
+                                        { name: "CCCCCC", path: "" },
                                     ].map((item, index) => (
                                         <li key={index} className="px-4 py-2 hover:text-orange-600 duration-300 cursor-pointer relative group">
                                             <Link to={item.path} className="block w-full h-full">

@@ -86,7 +86,7 @@ function About() {
                     <div className='flex items-center space-x-10 '>
                         <AutoSlideshow />
                         <div>
-                            <h1 className='mt-44 pl-8 font-bold text-4xl selection:bg-orange-500 '>NEDEN BİZ ?</h1>
+                            <h1 className='mt-44 pl-8 font-bold text-4xl selection:bg-orange-500 select-none'>NEDEN BİZ ?</h1>
                             <span className="block h-1 w-16 bg-black mb-4 ml-8 mt-1.5 rounded-sm"></span>
                             <p style={{ width: "550px" }} className='font-serif text-lg flex items-start ml-7 selection:bg-orange-500 '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam labore corporis blanditiis laudantium iste atque? Soluta vero provident, fugit eaque id aut ipsa eum sequi veniam quae corporis voluptatum eligendi nulla necessitatibus quos perferendis dignissimos animi, aliquid, reiciendis suscipit! Iure maiores tenetur nam laboriosam. Illo suscipit aut aliquid quo repellat, eum distinctio iste eligendi fuga quas vel maiores eius, eveniet, quaerat laborum voluptates! Repudiandae earum officia quia numquam deleniti dignissimos atque voluptates, nisi laboriosam pariatur aliquid perspiciatis, a praesentium dicta culpa ipsam porro optio tempore rem sequi quo neque! Sequi ratione officiis quos libero mollitia expedita, hic iure maiores ut.</p>
                         </div>
@@ -97,7 +97,7 @@ function About() {
 
                         <div>
 
-                            <h1 className='mt-56 font-bold text-4xl ml-[400px] selection:bg-orange-500 '>NEDEN BİZ ?</h1>
+                            <h1 className='mt-56 font-bold text-4xl ml-[400px] selection:bg-orange-500 select-none'>NEDEN BİZ ?</h1>
                             <span className="block h-1 w-16 bg-black mb-4 mt-1.5 rounded-sm ml-[400px]"></span>
                             <p style={{ width: "550px" }} className='font-serif text-lg ml-[400px] selection:bg-orange-500  '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam labore corporis blanditiis laudantium iste atque? Soluta vero provident, fugit eaque id aut ipsa eum sequi veniam quae corporis voluptatum eligendi nulla necessitatibus quos perferendis dignissimos animi, aliquid, reiciendis suscipit! Iure maiores tenetur nam laboriosam. Illo suscipit aut aliquid quo repellat, eum distinctio iste eligendi fuga quas vel maiores eius, eveniet, quaerat laborum voluptates! Repudiandae earum officia quia numquam deleniti dignissimos atque voluptates, nisi laboriosam pariatur aliquid perspiciatis, a praesentium dicta culpa ipsam porro optio tempore rem sequi quo neque! Sequi ratione officiis quos libero mollitia expedita, hic iure maiores ut.</p>
 

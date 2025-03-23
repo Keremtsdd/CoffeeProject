@@ -26,7 +26,7 @@ function Home() {
 
                 <div className="absolute top-0 left-0 w-full h-[1000px] flex justify-center items-center text-white">
 
-                    <div className='selection:bg-orange-600'>
+                    <div className='selection:bg-orange-500'>
                         <h1 className='text-8xl font-bold ml-20'>BURASI SLOGAN YERİ</h1>
                         <h1 className='text-8xl font-bold'>BURASI ALT SLOGAN YERİ</h1>
                         <h1 className='flex justify-center mt-7'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus porro ab sed veniam impedit iusto, natus aspernatur, </h1>
@@ -46,7 +46,7 @@ function Home() {
                             alt="sds"
                         />
 
-                        <div className="text-center pl-6 selection:bg-orange-600">
+                        <div className="text-center pl-6 selection:bg-orange-500">
 
                             <h2 className="text-2xl font-bold">Görselin Yanındaki Metin</h2>
                             <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
@@ -59,7 +59,7 @@ function Home() {
 
                 <motion.div
 
-                    className="selection:bg-orange-600"
+                    className="selection:bg-orange-500"
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 4, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
@@ -95,10 +95,10 @@ function Home() {
 
                 <div>
 
-                    <h1 className='w-[380px] flex  ml-[771px] mt-28 font-bold text-4xl hover:text-orange-800 duration-300 select-none'>Favori Kahvelerimiz</h1>
+                    <h1 style={{ width: "335px" }} className='w-[380px] flex  ml-[771px] mt-28 font-bold text-4xl hover:text-orange-800 duration-300 select-none'>Favori Kahvelerimiz</h1>
                     <span className='h-1 w-[80px] bg-black rounded-sm block ml-[773px] mt-1'></span>
 
-                    <div className='flex justify-center mt-[80px] selection:bg-orange-600'>
+                    <div className='flex justify-center mt-[80px] selection:bg-orange-500'>
 
                         <div className='h-[400px] w-[300px] text-center bg-white shadow-2xl ml-10 transition-transform hover:scale-105 border-2 border-black/15' >
 

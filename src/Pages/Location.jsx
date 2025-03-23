@@ -1,17 +1,18 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Map from '../Components/Map';
 import ReviewSection from '../Pages/ReviewSection';
+
 
 function Location() {
     const navigate = useNavigate()
     return (
-        <div className="relative ">
+        <div className="relative bg-neutral-200 ">
 
             <img className="h-[500px] w-full object-cover" src="https://wallpapers.com/images/hd/plain-black-desktop-lkf8asac31jppw0w.jpg" alt="locationbanner" />
 
@@ -41,39 +42,39 @@ function Location() {
 
             </div>
 
-            <div className="flex justify-between space-x-12 mt-32 px-16">
+            <div className="flex space-x-12 mt-32 px-16 ">
 
-                <div className="h-[100px] w-[800px] ml-52" >
+                <div className="h-[100px] w-[700px] ml-52" >
                     <Map />
                 </div>
 
-                <div className="space-y-6 w-3/5 mt-7">
+                <div className="h-[400px] w-[780px] bg-neutral-100 shadow-2xl flex">
 
-                    <div className='flex space-x-2 ml-20'>
-                        <LocationOnIcon fontSize='large' />
-                        <h1>Konum: Dükkan Adresiniz</h1>
-                    </div>
+                    <div >
 
-                    <div className='flex space-x-2 ml-20'>
-                        <PhoneIcon fontSize='large' />
-                        <h1>Telefon: 0123456789</h1>
-                    </div>
+                        <h1 className='mt-[80px] ml-[60px] font-bold text-3xl select-none'>İletişim</h1>
+                        <span className='h-1 w-14 mt-0.5 ml-[61px] rounded-sm bg-black block'></span>
+                        <p style={{ width: "320px" }} className="mt-6 ml-[25px] font-serif flex items-center select-text transition-transform hover:translate-x-2 selection:bg-orange-400 duration-500 cursor-default"><LocationOnOutlinedIcon className="mr-3 " />Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt.</p>
+                        <p style={{ width: "190px" }} className='ml-[25px] mt-5 text-lg font-serif flex items-center select-text transition-transform hover:translate-x-2 selection:bg-orange-400  duration-500 cursor-pointer'><a href="tel:+905421020028" className="flex items-center"><LocalPhoneOutlinedIcon className='mr-2' />+90 542 102 00 28</a></p>
+                        <p style={{ width: "190px" }} className='ml-[25px] mt-5 font-serif text-lg select-text transition-transform hover:translate-x-2 selection:bg-orange-400 duration-500 cursor-default'><EmailOutlinedIcon className='mr-2 mb-0.5' /> info@dükkan.com</p>
 
-                    <div className='flex space-x-2 ml-20'>
-                        <EmailIcon fontSize='large' />
-                        <h1>E-posta: info@kahvedukkani.com</h1>
                     </div>
 
                     <div>
-                        <h1 className='mb-5 ml-20 mt-14 text-2xl font-bold'>Çalışma Saatleri;</h1>
-                        <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta İçi: 08:00-19:00</h1>
-                        <h1 className='ml-20 text-xl'> <KeyboardArrowRightIcon /> Hafta Sonu: 08:00-19:00</h1>
+
+                        <h1 className='mt-[80px] ml-16 font-bold text-3xl select-none'>Çalışma Saatleri<AccessTimeIcon style={{ height: "29px", width: "29px" }} className='ml-2 mb-1' /></h1>
+                        <span className='h-1 w-20 mt-1 ml-16 rounded-sm bg-black block'></span>
+                        <h1 className='font-serif text-xl ml-16 mt-5 selection:bg-orange-400'>Hafta İçi <ArrowRightAltIcon style={{ height: "29px", width: "29px" }} className='mb-0.5' /> 08:00-19:00</h1>
+                        <h1 className='font-serif text-xl ml-16 mt-2 selection:bg-orange-400'>Hafta Sonu <ArrowRightAltIcon style={{ height: "29px", width: "29px" }} className='mb-0.5' /> 08:00-19:00</h1>
+
                     </div>
 
                 </div>
 
             </div>
+
             <ReviewSection />
+
         </div>
     )
 }
