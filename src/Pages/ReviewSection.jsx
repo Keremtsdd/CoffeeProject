@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import StarRating from "../Components/StarRating";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-
+import CommentIcon from '@mui/icons-material/Comment';
 
 const ReviewSection = () => {
 
@@ -52,16 +52,14 @@ const ReviewSection = () => {
     };
 
     return (
-        <div className="h-auto w-full bg-gray-700 p-6 mx-auto flex justify-center items-center">
+        <div className="h-auto w-[780px] bg-gray-700 p-6 mx-auto flex justify-center items-center rounded-sm ">
 
             <div className="w-[1000px]">
 
-                <h2 className="flex justify-center text-3xl mt-7 font-serif mb-4 text-white ">Sizin Görüşleriniz</h2>
+                <h2 className="flex justify-center text-3xl mt-7 font-serif mb-4 text-white ">Sizin Görüşleriniz <CommentIcon className="ml-2 mt-1" style={{ height: "35px", width: "35px" }} /></h2>
 
-                {/* Yorum ve Formu Üst Üste Alacak Flex Container */}
                 <div className="flex flex-col gap-8 justify-center mt-10">
 
-                    {/* Yorum Ekleme Formu */}
                     <div className="flex flex-col gap-4 w-full">
 
                         <div className="relative">
@@ -98,7 +96,6 @@ const ReviewSection = () => {
 
                     </div>
 
-                    {/* Yorumları Listeleme */}
                     <div className="w-full">
 
                         {reviewsToDisplay.length === 0 ? (
@@ -106,7 +103,7 @@ const ReviewSection = () => {
                         ) : (
 
                             reviewsToDisplay.map((review, index) => (
-                                <div key={index} className="p-3 border-b last:border-none bg-gray-800 rounded mb-2">
+                                <div key={index} className="p-3 border-b last:border-none bg-gray-800 rounded mb-2 transition-transform hover:translate-x-2">
 
                                     <div className="flex items-center mb-2">
 
@@ -120,7 +117,6 @@ const ReviewSection = () => {
                             ))
                         )}
 
-                        {/* Daha Fazla Yorum Göster/Gizle Butonu */}
                         <h1
                             className="mt-4 w-[185px] text-white hover:text-neutral-400 p-2 rounded  duration-300 mb-10 cursor-pointer"
                             onClick={toggleShowReviews}

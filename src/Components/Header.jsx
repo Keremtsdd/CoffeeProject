@@ -82,7 +82,7 @@ function Header() {
                         </h1>
 
                         {isOpen && (
-                            <div className="absolute left-0 w-40 bg-slate-800 text-white border-gray-300 rounded-sm shadow-lg mt-1">
+                            <div className="absolute -left-6 w-40 bg-black bg-opacity-90 text-white border-gray-300 rounded-sm shadow-lg mt-1.5">
                                 <ul className="py-2">
                                     {[
                                         { name: "İletişim", path: "" },
@@ -90,11 +90,10 @@ function Header() {
                                         { name: "BBBBBB", path: "" },
                                         { name: "CCCCCC", path: "" },
                                     ].map((item, index) => (
-                                        <li key={index} className="px-4 py-2 hover:text-orange-600 duration-300 cursor-pointer relative group">
+                                        <li key={index} className="px-4 py-2 hover:text-orange-600 transition-transform hover:translate-x-2 duration-500 cursor-pointer relative group">
                                             <Link to={item.path} className="block w-full h-full">
                                                 {item.name}
                                             </Link>
-                                            <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                         </li>
                                     ))}
                                 </ul>
@@ -103,7 +102,6 @@ function Header() {
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

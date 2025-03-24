@@ -12,6 +12,7 @@ const Map = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Google Map showing coffee shop location"
+                className='select-none'
             ></iframe>
         </div>
     );

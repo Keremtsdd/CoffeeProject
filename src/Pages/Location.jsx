@@ -9,6 +9,8 @@ import ReviewSection from '../Pages/ReviewSection';
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
 import LocationNews from '../Components/LocationNews';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 
 
 function Location() {
@@ -46,7 +48,7 @@ function Location() {
 
             <div className='mt-20'>
                 <LocationNews />
-                <span className='h-0.5 w-[1100px] mt-24 ml-[395px] rounded-sm bg-black/60 shadow-xl block'></span>
+                <span className='h-0.5 w-[1100px] mt-24 ml-[395px] rounded-sm bg-gray-400 shadow-xl block'></span>
             </div>
 
             <div className="flex space-x-12 mt-28 px-16 ">
@@ -80,8 +82,22 @@ function Location() {
 
             </div>
 
-            <div className='mt-52'>
-                <ReviewSection />
+            <div className='flex selection:bg-orange-500'>
+
+                <div className='h-[500px] w-[500px] ml-[280px] mt-[270px] bg-gray-700 shadow-lg'>
+
+                    <h1 style={{ width: "300px" }} className='font-bold text-2xl text-sky-100 mt-16 ml-14'>Yorum Yaparak Bizi Değerlendirebilirsiniz <DoubleArrowIcon /></h1>
+                    <span className='h-1 w-32 mt-2 block bg-sky-100 rounded-sm ml-14'></span>
+
+                    <h1 style={{ width: "400px" }} className='ml-14 mt-5 text-white'><SubdirectoryArrowRightIcon fontSize='small mb-1 mr-1' />Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aperiam molestiae blanditiis sunt a quam et quibusdam libero, illum in.</h1>
+
+
+                </div>
+
+                <div className='mt-20 ml-[163px] mb-[150px] '>
+                    <ReviewSection />
+                </div>
+
             </div>
 
         </div>

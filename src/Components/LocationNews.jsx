@@ -1,21 +1,16 @@
+
 import React, { useState, useEffect } from "react";
 
 // Resimler ve yazılar
 const images = [
     {
         src: "https://www.rivaicmimarlik.com/upload/images/sayfalar/2022/butik-cafe-ic-mimari-tasarimi-44923-5089991667.jpg",
-        text: "Butik Cafe İç Mimarisi Tasarımı",
-        textClass: "text-white text-3xl font-semibold bg-black bg-opacity-50 p-2 rounded-md"
     },
     {
         src: "https://www.pimak.com/assets/images/blog/butik.jpg",
-        text: "Butik Tasarım Örneği",
-        textClass: "text-black text-4xl font-bold bg-white bg-opacity-70 p-3 rounded-lg"
     },
     {
         src: "https://www.rivaicmimarlik.com/upload/images/sayfalar/2023/kahve-dukkani-dekorasyon-fikirleri-45029-6671568981.jpg",
-        text: "Modern Butik Dekorasyonu",
-        textClass: "text-gray-800 text-2xl font-light bg-yellow-500 bg-opacity-60 p-1 rounded-xl"
     },
 ];
 
@@ -48,9 +43,6 @@ function LocationNews() {
                             alt={item.text}
                             className="w-full h-96 object-cover block"
                         />
-                        <div className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 ${item.textClass}`}>
-                            {item.text}
-                        </div>
                     </div>
                 ))}
             </div>
@@ -69,3 +61,4 @@ function LocationNews() {
 }
 
 export default LocationNews;
+
