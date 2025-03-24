@@ -32,7 +32,7 @@ function About() {
                     alt="aboutfotos"
                 />
 
-                <div className="absolute bottom-3 ml-[650px] transform -translate-x-1/2 bg-black/50 px-4 py-2 rounded-full flex space-x-2">
+                <div className="absolute bottom-3 ml-[650px] transform -translate-x-1/2  px-4 py-2 rounded-full flex space-x-2">
                     {images.map((_, index) => (
                         <span
                             key={index}

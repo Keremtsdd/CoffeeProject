@@ -123,7 +123,7 @@ function Blog() {
 
                         <div className='-mt-[70px] mr-[460px] bg-white flex justify-center cursor-pointer'>
 
-                            <button onClick={() => navigate('/location')} className='h-9 w-[170px] text-lg font-serif border-2 border-black rounded-sm  hover:border-orange-900 hover:bg-orange-800 hover:text-white duration-300'>Bizi Ziyaret Et</button>
+                            <button onClick={() => navigate('/location')} className='h-9 w-[170px] text-lg font-serif border-2 border-black rounded-sm  hover:border-orange-900 hover:bg-orange-800 hover:text-white duration-500'>Bizi Ziyaret Et</button>
 
                         </div>
 
@@ -146,7 +146,7 @@ function Blog() {
                             <h1 style={{ width: "262px" }} onClick={() => navigate('/menü')} className='mt-6 ml-10 text-2xl font-bold hover:text-orange-800 duration-300 cursor-pointer'>Menümüze Göz Atın <ExpandMoreTwoToneIcon className='mb-1' /></h1>
                             <span className='block h-1 w-20 bg-black -mt-0.5 ml-10 rounded-sm'></span>
                             <p style={{ width: "300px" }} className='ml-[40px] mt-6'><SubdirectoryArrowRightIcon style={{ width: "18px", height: "18px" }} className='mb-1 mr-1' />Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, ducimus incidunt aspernatur blanditiis eum deserunt?</p>
-                            <button onClick={() => navigate('/menü')} className='h-9 w-32 mt-10  ml-[120px] text-xl font-serif bg-white border-2 border-black rounded-sm hover:border-orange-900 hover:bg-orange-800 hover:text-white duration-300 '>Menü</button>
+                            <button onClick={() => navigate('/menü')} className='h-9 w-32 mt-10  ml-[120px] text-xl font-serif bg-white border-2 border-black rounded-sm hover:border-orange-900 hover:bg-orange-800 hover:text-white duration-500 '>Menü</button>
 
                         </div>
 

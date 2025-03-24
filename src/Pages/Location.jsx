@@ -4,9 +4,11 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Map from '../Components/Map';
 import ReviewSection from '../Pages/ReviewSection';
+import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
+import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
+import LocationNews from '../Components/LocationNews';
 
 
 function Location() {
@@ -42,9 +44,14 @@ function Location() {
 
             </div>
 
-            <div className="flex space-x-12 mt-32 px-16 ">
+            <div className='mt-20'>
+                <LocationNews />
+                <span className='h-0.5 w-[1100px] mt-24 ml-[395px] rounded-sm bg-black/60 shadow-xl block'></span>
+            </div>
 
-                <div className="h-[100px] w-[700px] ml-52" >
+            <div className="flex space-x-12 mt-28 px-16 ">
+
+                <div className="h-[100px] w-[700px] ml-[130px] shadow-2xl" >
                     <Map />
                 </div>
 
@@ -52,7 +59,7 @@ function Location() {
 
                     <div >
 
-                        <h1 className='mt-[80px] ml-[60px] font-bold text-3xl select-none'>İletişim</h1>
+                        <h1 className='mt-[80px] ml-[60px] font-bold text-3xl select-none'>İletişim<PermPhoneMsgIcon className='ml-1 mb-0.5' style={{ height: "29px", width: "29px" }} /></h1>
                         <span className='h-1 w-14 mt-0.5 ml-[61px] rounded-sm bg-black block'></span>
                         <p style={{ width: "320px" }} className="mt-6 ml-[25px] font-serif flex items-center select-text transition-transform hover:translate-x-2 selection:bg-orange-400 duration-500 cursor-default"><LocationOnOutlinedIcon className="mr-3 " />Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt.</p>
                         <p style={{ width: "190px" }} className='ml-[25px] mt-5 text-lg font-serif flex items-center select-text transition-transform hover:translate-x-2 selection:bg-orange-400  duration-500 cursor-pointer'><a href="tel:+905421020028" className="flex items-center"><LocalPhoneOutlinedIcon className='mr-2' />+90 542 102 00 28</a></p>
@@ -62,7 +69,7 @@ function Location() {
 
                     <div>
 
-                        <h1 className='mt-[80px] ml-16 font-bold text-3xl select-none'>Çalışma Saatleri<AccessTimeIcon style={{ height: "29px", width: "29px" }} className='ml-2 mb-1' /></h1>
+                        <h1 className='mt-[80px] ml-16 font-bold text-3xl select-none'>Çalışma Saatleri<AccessTimeFilledRoundedIcon style={{ height: "29px", width: "29px" }} className='ml-2 mb-1' /></h1>
                         <span className='h-1 w-20 mt-1 ml-16 rounded-sm bg-black block'></span>
                         <h1 className='font-serif text-xl ml-16 mt-5 selection:bg-orange-400'>Hafta İçi <ArrowRightAltIcon style={{ height: "29px", width: "29px" }} className='mb-0.5' /> 08:00-19:00</h1>
                         <h1 className='font-serif text-xl ml-16 mt-2 selection:bg-orange-400'>Hafta Sonu <ArrowRightAltIcon style={{ height: "29px", width: "29px" }} className='mb-0.5' /> 08:00-19:00</h1>
@@ -73,7 +80,9 @@ function Location() {
 
             </div>
 
-            <ReviewSection />
+            <div className='mt-52'>
+                <ReviewSection />
+            </div>
 
         </div>
     )

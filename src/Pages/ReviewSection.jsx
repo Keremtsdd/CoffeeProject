@@ -52,7 +52,7 @@ const ReviewSection = () => {
     };
 
     return (
-        <div className="h-auto w-full bg-gray-700 p-6 mt-52 mx-auto flex justify-center items-center">
+        <div className="h-auto w-full bg-gray-700 p-6 mx-auto flex justify-center items-center">
 
             <div className="w-[1000px]">
 

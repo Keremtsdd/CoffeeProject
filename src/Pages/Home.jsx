@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import StarIcon from '@mui/icons-material/Star';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
+import CoffeeRoundedIcon from '@mui/icons-material/CoffeeRounded';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
@@ -77,7 +78,7 @@ function Home() {
 
                                 <div className='mt-[80px]  select-none'>
 
-                                    <button className='h-10 w-32 border-2 border-black rounded-sm hover:bg-black/90 duration-500 hover:text-white font-bold '>Button</button>
+                                    <button className='h-10 w-32 border-2 border-black rounded-sm hover:bg-black/90 duration-500 hover:text-white font-bold '><CoffeeRoundedIcon style={{ width: "30px", height: "30px" }} /></button>
 
                                 </div>
 
