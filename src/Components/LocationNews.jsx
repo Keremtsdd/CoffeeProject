@@ -1,7 +1,5 @@
-
 import React, { useState, useEffect } from "react";
 
-// Resimler ve yazılar
 const images = [
     {
         src: "https://www.rivaicmimarlik.com/upload/images/sayfalar/2022/butik-cafe-ic-mimari-tasarimi-44923-5089991667.jpg",

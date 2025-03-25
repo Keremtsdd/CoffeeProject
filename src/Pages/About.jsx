@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useNavigate } from 'react-router-dom';
-
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function About() {
 

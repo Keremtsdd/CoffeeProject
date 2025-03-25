@@ -1,5 +1,5 @@
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-// Yıldızlı Puanlama Bileşeni
+
 const StarRating = ({ rating, setRating }) => {
     return (
         <div className="flex space-x-2">

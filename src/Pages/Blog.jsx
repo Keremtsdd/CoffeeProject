@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import { motion } from "framer-motion";
 import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
-
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Blog() {
     const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import { motion } from "framer-motion";
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 function ScrollToTop() {
     const [isVisibility, setIsVisibility] = useState(false)

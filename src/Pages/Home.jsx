@@ -1,10 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 import StarIcon from '@mui/icons-material/Star';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
-import CoffeeRoundedIcon from '@mui/icons-material/CoffeeRounded';
-import { useNavigate } from 'react-router-dom';
+import EmojiFoodBeverageOutlinedIcon from '@mui/icons-material/EmojiFoodBeverageOutlined';
+
 
 function Home() {
     const navigate = useNavigate()
@@ -39,18 +40,15 @@ function Home() {
 
                 <div className="flex justify-center items-center absolute top-full left-0 w-full z-30">
 
-                    <div className="flex justify-center items-center space-x-8 h-96 w-1/2 bg-white rounded-sm shadow-xl">
+                    <div className='h-[400px] w-[900px] bg-white shadow-2xl rounded-sm flex'>
 
-                        <img
-                            className="h-full w-3/6 object-cover rounded-sm select-none"
-                            src="https://images.stockcake.com/public/e/0/7/e077b8de-e7d7-427b-9dcd-7b57a766d759_large/steaming-morning-coffee-stockcake.jpg"
-                            alt="sds"
-                        />
+                        <img className='h-[400px] w-[430px] rounded-sm' src="https://images.stockcake.com/public/e/0/7/e077b8de-e7d7-427b-9dcd-7b57a766d759_large/steaming-morning-coffee-stockcake.jpg" alt="Homeİmg" />
 
-                        <div className="text-center pl-6 selection:bg-orange-500">
+                        <div>
 
-                            <h2 className="text-2xl font-bold">Görselin Yanındaki Metin</h2>
-                            <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
+                            <h1 className='font-bold text-3xl mt-12 ml-14'>HAKKIMIZDA</h1>
+                            <span className='h-1 w-24 bg-black block rounded-sm mt-0.5 ml-14'></span>
+                            <p style={{ width: "380px" }} className='ml-14 mt-5'><SubdirectoryArrowRightIcon style={{ width: "20px", height: "20px" }} className='mb-1.5 mr-1' />Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem velit sunt nisi sint sapiente fugiat ducimus quisquam praesentium libero.</p>
 
                         </div>
 
@@ -68,25 +66,19 @@ function Home() {
                 >
                     <div className='flex justify-center items-center mt-14'>
 
-                        <div className='flex justify-center items-center space-x-8 h-96 w-1/2 mt-72 bg-white shadow-xl rounded-sm '>
+                        <div className='h-[400px] w-[1000px] bg-white shadow-2xl mt-[300px] flex rounded-sm'>
 
-                            <div className='text-center'>
+                            <div>
 
-                                <h2 className='text-2xl font-bold'>Görselin Yanındaki Metin</h2>
+                                <h1 className='font-bold text-3xl mt-12 ml-14'>KAHVELERİMİZ <EmojiFoodBeverageOutlinedIcon style={{ width: "35px", height: "35px" }} className='mb-1' /></h1>
+                                <span className='h-1 w-24 -mt-1 bg-black block rounded-sm ml-14'></span>
+                                <p style={{ width: "380px" }} className='ml-14 mt-5'><SubdirectoryArrowRightIcon style={{ width: "20px", height: "20px" }} className='mb-1.5 mr-1' />Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem velit sunt nisi sint sapiente fugiat ducimus quisquam praesentium libero.</p>
 
-                                <p>Burada metninizi yazabilirsiniz. Görselin sağında yer alacak şekilde hizalanacak.</p>
-
-                                <div className='mt-[80px]  select-none'>
-
-                                    <button className='h-10 w-32 border-2 border-black rounded-sm hover:bg-black/90 duration-500 hover:text-white font-bold '><CoffeeRoundedIcon style={{ width: "30px", height: "30px" }} /></button>
-
-                                </div>
+                                <button className='h-9 w-44 mt-20 ml-40 bg-white border-2 border-black font-serif text-lg hover:bg-black hover:text-white duration-500'>kahvelere göz at</button>
 
                             </div>
 
-                            <img className='h-96 w-3/6 object-cover rounded-sm select-none'
-                                src="https://ideacdn.net/idea/cx/20/myassets/products/780/2.jpg?revision=1697143329"
-                                alt="sds" />
+                            <img className='h-[400px] w-[480px] ml-[84px] rounded-sm' src="https://ideacdn.net/idea/cx/20/myassets/products/780/2.jpg?revision=1697143329" alt="Homeİmg" />
 
                         </div>
 
@@ -96,8 +88,8 @@ function Home() {
 
                 <div>
 
-                    <h1 style={{ width: "335px" }} className='w-[380px] flex  ml-[771px] mt-28 font-bold text-4xl hover:text-orange-800 duration-300 select-none'>Favori Kahvelerimiz</h1>
-                    <span className='h-1 w-[80px] bg-black rounded-sm block ml-[773px] mt-1'></span>
+                    <h1 style={{ width: "335px" }} className='w-[380px] flex  ml-[820px] mt-32 font-bold text-4xl hover:text-orange-800 duration-300 select-none'>FAVORİ KAHVELER</h1>
+                    <span className='h-0.5 w-[500px] bg-black/60 rounded-sm block ml-[730px] mt-8'></span>
 
                     <div className='flex justify-center mt-[80px] selection:bg-orange-500'>
 
@@ -139,7 +131,7 @@ function Home() {
 
                 <div className='relative h-[900px] w-full'>
 
-                    <img className='h-[800px] w-full opacity-85' src="https://www.rivaicmimarlik.com/upload/images/sayfalar/2023/3-nesil-kahveci-tasarimlari-nasil-olmali-45063-947653669.jpg" alt="fotogaleri" />
+                    <img className='h-[800px] w-full opacity-70' src="https://www.rivaicmimarlik.com/upload/images/sayfalar/2023/3-nesil-kahveci-tasarimlari-nasil-olmali-45063-947653669.jpg" alt="fotogaleri" />
 
                     <div className='absolute h-[630px] w-[395px] bottom-[190px] left-[70px] bg-white/85 shadow-2xl flex justify-center transition-transform hover:scale-105 duration-300'>
 

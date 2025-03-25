@@ -1,7 +1,6 @@
 import React from 'react'
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useNavigate } from 'react-router-dom';
-
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function Menü() {
     const navigate = useNavigate()

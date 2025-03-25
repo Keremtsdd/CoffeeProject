@@ -45,14 +45,14 @@ function Footer() {
 
                     <p className="mt-2 font-serif cursor-text">Lorem ipsum dolor sit amet.</p>
 
-                    <div className="flex items-center space-x-5 mt-7 cursor-pointer">
+                    <div className="flex items-center space-x-5 mt-7">
 
                         <Link to={"https://www.instagram.com/"} target='_blank'>
                             <motion.div
                                 whileHover={{ scale: 1.2, opacity: 1 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                <InstagramIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500 duration-300 transition-colors" />
+                                <InstagramIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500 duration-300" />
                             </motion.div>
                         </Link>
 
@@ -61,7 +61,7 @@ function Footer() {
                                 whileHover={{ scale: 1.2, opacity: 0.8 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                <WhatsAppIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500 transition-colors" />
+                                <WhatsAppIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500" />
                             </motion.div>
                         </Link>
 
@@ -70,7 +70,7 @@ function Footer() {
                                 whileHover={{ scale: 1.2, opacity: 0.8 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                <YouTubeIcon style={{ width: "37px", height: "37px" }} className=" text-white hover:text-orange-500 transition-colors" />
+                                <YouTubeIcon style={{ width: "37px", height: "37px" }} className=" text-white hover:text-orange-500" />
                             </motion.div>
                         </Link>
 
@@ -79,7 +79,7 @@ function Footer() {
                                 whileHover={{ scale: 1.2, opacity: 0.8 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                <XIcon style={{ width: "28px", height: "28px" }} className=" text-white hover:text-orange-500 transition-colors" />
+                                <XIcon style={{ width: "28px", height: "28px" }} className=" text-white hover:text-orange-500" />
                             </motion.div>
                         </Link>
 

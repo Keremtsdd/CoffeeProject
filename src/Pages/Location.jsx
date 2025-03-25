@@ -1,17 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Map from '../Components/Map';
+import LocationNews from '../Components/LocationNews';
+import ReviewSection from '../Pages/ReviewSection';
+import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
+import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import Map from '../Components/Map';
-import ReviewSection from '../Pages/ReviewSection';
-import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
-import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
-import LocationNews from '../Components/LocationNews';
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
-
 
 function Location() {
     const navigate = useNavigate()
@@ -48,7 +47,7 @@ function Location() {
 
             <div className='mt-20'>
                 <LocationNews />
-                <span className='h-0.5 w-[1100px] mt-24 ml-[395px] rounded-sm bg-gray-400 shadow-xl block'></span>
+                <span className='h-0.5 w-[1100px] mt-24 ml-[395px] rounded-sm bg-black/70 shadow-xl block'></span>
             </div>
 
             <div className="flex space-x-12 mt-28 px-16 ">
