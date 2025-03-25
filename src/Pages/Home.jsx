@@ -125,6 +125,14 @@ function Home() {
 
                         </div>
 
+                        <div className='h-[400px] w-[300px] text-center bg-white shadow-2xl ml-10 transition-transform hover:scale-105 border-2 border-black/15 mb-52' >
+
+                            <img className='h-[250px] w-64 m-5 select-none' src="https://www.tchibo.com.tr/newmedia/page/img/5e54147ebb0dc076/image_match.jpg" alt="FiltreKahve" />
+                            <h1 className='flex justify-center -mt-[10px] text-xl font-bold' >Americano</h1>
+                            <p className='mr-2 mt-3  font-serif'> <StarIcon fontSize='inherit' className='mb-1.5' /> Özel Tarifimizle Hazırlanan Americano Deneyimini Yaşayın</p>
+
+                        </div>
+
                     </div>
 
                 </div>
