@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import HotCoffes from '../Menu/HotCoffes';
-import İceCoffes from '../Menu/İceCoffes';
+import HotCoffes from '../Menu/HotCoffees';
+import İceCoffes from '../Menu/İceCoffees';
 import Sweets from '../Menu/Sweets';
 
 function Menü() {
