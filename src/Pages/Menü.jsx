@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import HotCoffes from '../Menu/HotCoffees';
 import İceCoffes from '../Menu/İceCoffees';
 import Sweets from '../Menu/Sweets';
-import Menuİmages from '../Components/Menuİmages';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
@@ -40,13 +39,6 @@ function Menü() {
 
                     </div>
 
-                </div>
-
-
-                <span className='h-5 w-[1720px] ml-[100px] mt-16 bg-orange-600 block rounded-sm'></span>
-
-                <div className='mt-14'>
-                    <Menuİmages />
                 </div>
 
                 <div className='flex mt-10'>
