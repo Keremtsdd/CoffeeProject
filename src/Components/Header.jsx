@@ -48,8 +48,8 @@ function Header() {
                     } ${isScrolled ? "bg-black" : ""}`}
             >
                 <div className="flex justify-center mt-4 select-none py-4">
-                    <h1 onClick={() => navigate('/')} className="font-bold cursor-pointer text-4xl pr-6">
-                        LOGO
+                    <h1 onClick={() => navigate('/')} className="font-serif cursor-pointer text-4xl pr-6">
+                        diaspora
                     </h1>
                     <div className="h-10 w-0.5 bg-white"></div>
 

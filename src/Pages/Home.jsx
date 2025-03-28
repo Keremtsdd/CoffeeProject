@@ -88,10 +88,10 @@ function Home() {
 
                 <div>
 
-                    <h1 style={{ width: "335px" }} className='w-[380px] flex  ml-[820px] mt-32 font-bold text-4xl hover:text-orange-800 duration-300 select-none'>FAVORİ KAHVELER</h1>
-                    <span className='h-0.5 w-[500px] bg-black/30 rounded-md block ml-[730px] mt-5'></span>
+                    <h1 style={{ width: "335px" }} className='w-[380px] flex  ml-[180px] mt-32 font-bold text-4xl hover:text-orange-800 duration-300 select-none'>FAVORİ KAHVELER</h1>
+                    <span className='h-1 w-[190px] bg-black rounded-md block ml-[181px] mt-1'></span>
 
-                    <div className='flex justify-center mt-[80px] selection:bg-orange-500'>
+                    <div className='flex justify-center mt-[50px] selection:bg-orange-500'>
 
                         <div className='h-[400px] w-[300px] text-center bg-white shadow-2xl ml-10 transition-transform hover:scale-105 border-2 border-black/15' >
 
