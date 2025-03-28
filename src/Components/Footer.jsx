@@ -82,9 +82,9 @@ function Footer() {
                     <div className='group'>
                         <h1 className='mt-14 ml-28 font-bold text-3xl'>Menü</h1>
                         <span className='h-1 w-10 ml-[114px] rounded-sm bg-black block'></span>
-                        <p style={{ width: "130px" }} className='mt-5 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Sıcak İçecekler</p>
+                        <p onClick={() => navigate('/menü')} style={{ width: "130px" }} className='mt-5 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Sıcak İçecekler</p>
                         <p className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Soğuk İçecekler</p>
-                        <p style={{ width: "100px" }} className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Yiyecekler</p>
+                        <p style={{ width: "100px" }} className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Tatlılar</p>
                     </div>
 
                     <div>
