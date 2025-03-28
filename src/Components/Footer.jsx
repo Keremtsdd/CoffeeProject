@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import { motion } from "framer-motion";
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -48,39 +47,19 @@ function Footer() {
                     <div className="flex items-center space-x-5 mt-7">
 
                         <Link to={"https://www.instagram.com/"} target='_blank'>
-                            <motion.div
-                                whileHover={{ scale: 1.2, opacity: 1 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <InstagramIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500 duration-300" />
-                            </motion.div>
+                            <InstagramIcon style={{ width: "32px", height: "32px" }} />
                         </Link>
 
                         <Link to={"https://www.Whatsapp.com/"} target='_blank'>
-                            <motion.div
-                                whileHover={{ scale: 1.2, opacity: 0.8 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <WhatsAppIcon style={{ width: "32px", height: "32px" }} className=" text-white hover:text-orange-500" />
-                            </motion.div>
+                            <WhatsAppIcon style={{ width: "32px", height: "32px" }} />
                         </Link>
 
                         <Link to={"https://www.youtube.com/"} target='_blank'>
-                            <motion.div
-                                whileHover={{ scale: 1.2, opacity: 0.8 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <YouTubeIcon style={{ width: "37px", height: "37px" }} className=" text-white hover:text-orange-500" />
-                            </motion.div>
+                            <YouTubeIcon style={{ width: "37px", height: "37px" }} />
                         </Link>
 
                         <Link to={"https://www.x.com/"} target='_blank'>
-                            <motion.div
-                                whileHover={{ scale: 1.2, opacity: 0.8 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <XIcon style={{ width: "28px", height: "28px" }} className=" text-white hover:text-orange-500" />
-                            </motion.div>
+                            <XIcon style={{ width: "28px", height: "28px" }} />
                         </Link>
 
                     </div>
@@ -103,9 +82,9 @@ function Footer() {
                     <div className='group'>
                         <h1 className='mt-14 ml-28 font-bold text-3xl'>Menü</h1>
                         <span className='h-1 w-10 ml-[114px] rounded-sm bg-black block'></span>
-                        <p style={{ width: "130px" }} className='mt-5 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Sıcak İçecekler</p>
-                        <p className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Soğuk İçecekler</p>
-                        <p style={{ width: "95px" }} className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1.5'><KeyboardArrowRightIcon />Yiyecekler</p>
+                        <p style={{ width: "130px" }} className='mt-5 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Sıcak İçecekler</p>
+                        <p className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Soğuk İçecekler</p>
+                        <p style={{ width: "100px" }} className='mt-1 ml-[106px] cursor-pointer hover:text-orange-700 duration-300 transition-transform hover:translate-x-1'><KeyboardArrowRightIcon style={{ height: "20px", width: "25px" }} />Yiyecekler</p>
                     </div>
 
                     <div>
