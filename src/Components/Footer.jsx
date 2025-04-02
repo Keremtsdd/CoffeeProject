@@ -33,7 +33,7 @@ function Footer() {
     };
 
     return (
-        <>
+        <footer>
             <div className='flex select-none'>
 
                 <div className="h-[350px] w-[800px] bg-black text-white flex flex-col items-center">
@@ -99,7 +99,7 @@ function Footer() {
                                 placeholder=" E-posta adresinizi giriniz"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="h-11 w-[210px] border-2 border-black focus:outline-none focus:ring-0 mt-1"
+                                className="h-11 w-[210px] border-2 border-black bg-green-900 focus:outline-none focus:ring-0 mt-1"
                             />
                             <button
                                 type="submit"
@@ -120,7 +120,7 @@ function Footer() {
 
             </div>
 
-        </>
+        </footer>
     );
 }
 

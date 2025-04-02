@@ -95,7 +95,7 @@ function Menü() {
 
                     </div>
 
-                    <span className='h-[770px] w-0.5 mt-16 ml-12 mb-[190px] bg-black/15 block'></span>
+                    <span className='h-[770px] w-0.5 mt-16 ml-12 mb-[195px] bg-black/15 block'></span>
                     {selectedCategory === "Hot Coffees" && <HotCoffes />}
                     {selectedCategory === "İce Coffees" && <İceCoffes />}
                     {selectedCategory === "Sweets" && <Sweets />}

@@ -41,7 +41,7 @@ function Header() {
     }, [lastScrollY]);
 
     return (
-        <>
+        <header>
 
             <div
                 className={`fixed left-0 w-full text-white z-50 transition-all duration-300  ${showHeader ? "top-0" : "-top-20"
@@ -102,7 +102,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-        </>
+        </header>
     );
 }
 
